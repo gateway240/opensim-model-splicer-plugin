@@ -35,8 +35,7 @@ int main() {
     baseModel.setName(newModelName);
 
     // Delete forces from base model
-    OpenSim::ForceSet &forceSet = baseModel.updForceSet();
-    forceSet = OpenSim::ForceSet();
+    baseModel.updForceSet().clearAndDestroy();
 
     // Left Knee
     removeJointByName(baseModel, "knee_l");

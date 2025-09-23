@@ -6,6 +6,18 @@
 #include <OpenSim/Simulation/Model/Model.h>
 #include <iostream>
 
+void removeBodyByName(OpenSim::Model &model, const std::string &bodyName) {
+  OpenSim::BodySet &bodySet = model.updBodySet();
+  int bodyIndex = bodySet.getIndex(bodyName);
+  if (bodyIndex != -1) {
+    bodySet.remove(bodyIndex);
+    std::cout << "Removed body '" << bodyName << "' from model." << std::endl;
+  } else {
+    std::cout << "Warning: body '" << bodyName << "' not found in model."
+              << std::endl;
+  }
+}
+
 void removeJointByName(OpenSim::Model &model, const std::string &jointName) {
   OpenSim::JointSet &jointSet = model.updJointSet();
   int jointIndex = jointSet.getIndex(jointName);
@@ -25,6 +37,7 @@ void addBodiesFromModel(OpenSim::Model &targetModel,
   for (int i = 0; i < sourceBodySet.getSize(); ++i) {
     const OpenSim::Body &sourceBody = sourceBodySet.get(i);
     OpenSim::Body *newBody = sourceBody.clone();
+    std::cout << "Adding Body: " << newBody->getName() << std::endl;
     targetBodySet.adoptAndAppend(newBody);
   }
 }
@@ -46,6 +59,7 @@ void insertJointsFromModel(OpenSim::Model &targetModel,
   for (int i = sourceJointSet.getSize() - 1; i >= 0; --i) {
     const OpenSim::Joint &sourceJoint = sourceJointSet.get(i);
     OpenSim::Joint *newJoint = sourceJoint.clone();
+    std::cout << "Adding Joint: " << newJoint->getName() << std::endl;
     targetJointSet.insert(insertIndex, newJoint);
   }
 }

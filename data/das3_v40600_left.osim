@@ -1,0 +1,1376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSimDocument Version="40600">
+  <Model name="das3_v40600_left_mirror_rename">
+    <Ground name="ground">
+      <FrameGeometry name="frame_geometry">
+        <socket_frame>..</socket_frame>
+        <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+      </FrameGeometry>
+    </Ground>
+    <gravity>0 -9.8066499999999994 0</gravity>
+    <BodySet name="bodyset">
+      <objects>
+        <Body name="thorax">
+          <components>
+            <PhysicalOffsetFrame name="thorax_geom_frame_1">
+              <FrameGeometry name="frame_geometry">
+                <socket_frame>..</socket_frame>
+                <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <attached_geometry>
+                <Mesh name="thorax_geom_1">
+                  <socket_frame>..</socket_frame>
+                  <scale_factors>1 1 1</scale_factors>
+                  <Appearance>
+                    <opacity>1</opacity>
+                    <color>1 1 1</color>
+                  </Appearance>
+                  <mesh_file>ground_ribs.vtp</mesh_file>
+                </Mesh>
+              </attached_geometry>
+              <socket_parent>..</socket_parent>
+              <translation>0 0 0</translation>
+              <orientation>-0 1.5700000000000001 -0</orientation>
+            </PhysicalOffsetFrame>
+            <PhysicalOffsetFrame name="thorax_geom_frame_2">
+              <FrameGeometry name="frame_geometry">
+                <socket_frame>..</socket_frame>
+                <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <attached_geometry>
+                <Mesh name="thorax_geom_2">
+                  <socket_frame>..</socket_frame>
+                  <scale_factors>1 1 1</scale_factors>
+                  <Appearance>
+                    <opacity>1</opacity>
+                    <color>1 1 1</color>
+                  </Appearance>
+                  <mesh_file>ground_spine.vtp</mesh_file>
+                </Mesh>
+              </attached_geometry>
+              <socket_parent>..</socket_parent>
+              <translation>0 0 0</translation>
+              <orientation>-0 1.5700000000000001 -0</orientation>
+            </PhysicalOffsetFrame>
+            <PhysicalOffsetFrame name="thorax_geom_frame_3">
+              <FrameGeometry name="frame_geometry">
+                <socket_frame>..</socket_frame>
+                <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <attached_geometry>
+                <Mesh name="thorax_geom_3">
+                  <socket_frame>..</socket_frame>
+                  <scale_factors>1 1 1</scale_factors>
+                  <Appearance>
+                    <opacity>1</opacity>
+                    <color>1 1 1</color>
+                  </Appearance>
+                  <mesh_file>ground_skull.vtp</mesh_file>
+                </Mesh>
+              </attached_geometry>
+              <socket_parent>..</socket_parent>
+              <translation>0 0 0</translation>
+              <orientation>-0 1.5700000000000001 -0</orientation>
+            </PhysicalOffsetFrame>
+            <PhysicalOffsetFrame name="thorax_geom_frame_4">
+              <FrameGeometry name="frame_geometry">
+                <socket_frame>..</socket_frame>
+                <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <attached_geometry>
+                <Mesh name="thorax_geom_4">
+                  <socket_frame>..</socket_frame>
+                  <scale_factors>1 1 1</scale_factors>
+                  <Appearance>
+                    <opacity>1</opacity>
+                    <color>1 1 1</color>
+                  </Appearance>
+                  <mesh_file>ground_jaw.vtp</mesh_file>
+                </Mesh>
+              </attached_geometry>
+              <socket_parent>..</socket_parent>
+              <translation>0 0 0</translation>
+              <orientation>-0 1.5700000000000001 -0</orientation>
+            </PhysicalOffsetFrame>
+          </components>
+          <FrameGeometry name="frame_geometry">
+            <socket_frame>..</socket_frame>
+            <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+          </FrameGeometry>
+          <attached_geometry/>
+          <WrapObjectSet name="wrapobjectset">
+            <objects>
+              <WrapEllipsoid name="serr_ant">
+                <active>true</active>
+                <xyz_body_rotation>0 0 0</xyz_body_rotation>
+                <translation>0 -0.14860000000000001 0.0591</translation>
+                <quadrant>all</quadrant>
+                <dimensions>0.14699999999999999 0.2079 0.094399999999999998</dimensions>
+              </WrapEllipsoid>
+            </objects>
+          </WrapObjectSet>
+          <mass>20</mass>
+          <mass_center>0 -0.14860000000000001 0.0591</mass_center>
+          <inertia>1.2984100000000001 0.55245 1.2984100000000001 0 0 0</inertia>
+        </Body>
+        <Body name="clavicle_1_l">
+          <FrameGeometry name="frame_geometry">
+            <socket_frame>..</socket_frame>
+            <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+          </FrameGeometry>
+          <mass>0</mass>
+          <mass_center>0 0 0</mass_center>
+          <inertia>0 0 0 0 0 0</inertia>
+        </Body>
+        <Body name="clavicle_2_l">
+          <FrameGeometry name="frame_geometry">
+            <socket_frame>..</socket_frame>
+            <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+          </FrameGeometry>
+          <mass>0</mass>
+          <mass_center>0 0 0</mass_center>
+          <inertia>0 0 0 0 0 0</inertia>
+        </Body>
+        <Body name="clavicle_l">
+          <FrameGeometry name="frame_geometry">
+            <socket_frame>..</socket_frame>
+            <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+          </FrameGeometry>
+          <attached_geometry>
+            <Mesh name="clavicle_l_geom_1">
+              <socket_frame>..</socket_frame>
+              <scale_factors>1 1 1</scale_factors>
+              <Appearance>
+                <opacity>1</opacity>
+                <color>1 1 1</color>
+              </Appearance>
+              <mesh_file>lclavicle.obj</mesh_file>
+            </Mesh>
+          </attached_geometry>
+          <mass>0.156</mass>
+          <mass_center>-0.0983 0.0167 0.0041999999999999997</mass_center>
+          <inertia>6.3999999999999997e-06 2.6299999999999999e-05 2.4300000000000001e-05 -6.7000000000000002e-06 -9.5000000000000005e-06 2.9000000000000002e-06</inertia>
+        </Body>
+        <Body name="scapula_1_l">
+          <FrameGeometry name="frame_geometry">
+            <socket_frame>..</socket_frame>
+            <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+          </FrameGeometry>
+          <mass>0</mass>
+          <mass_center>0 0 0</mass_center>
+          <inertia>0 0 0 0 0 0</inertia>
+        </Body>
+        <Body name="scapula_2_l">
+          <FrameGeometry name="frame_geometry">
+            <socket_frame>..</socket_frame>
+            <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+          </FrameGeometry>
+          <mass>0</mass>
+          <mass_center>0 0 0</mass_center>
+          <inertia>0 0 0 0 0 0</inertia>
+        </Body>
+        <Body name="scapula_l">
+          <FrameGeometry name="frame_geometry">
+            <socket_frame>..</socket_frame>
+            <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+          </FrameGeometry>
+          <attached_geometry>
+            <Mesh name="scapula_l_geom_1">
+              <socket_frame>..</socket_frame>
+              <scale_factors>1 1 1</scale_factors>
+              <Appearance>
+                <opacity>1</opacity>
+                <color>1 1 1</color>
+              </Appearance>
+              <mesh_file>lscapula.obj</mesh_file>
+            </Mesh>
+          </attached_geometry>
+          <mass>0.7054</mass>
+          <mass_center>0.053 -0.0229 -0.0247</mass_center>
+          <inertia>0.001 0.001 0.001 0 0 0</inertia>
+        </Body>
+        <Body name="humerus_1_l">
+          <FrameGeometry name="frame_geometry">
+            <socket_frame>..</socket_frame>
+            <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+          </FrameGeometry>
+          <mass>0</mass>
+          <mass_center>0 0 0</mass_center>
+          <inertia>0 0 0 0 0 0</inertia>
+        </Body>
+        <Body name="humerus_2_l">
+          <FrameGeometry name="frame_geometry">
+            <socket_frame>..</socket_frame>
+            <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+          </FrameGeometry>
+          <mass>0</mass>
+          <mass_center>0 0 0</mass_center>
+          <inertia>0 0 0 0 0 0</inertia>
+        </Body>
+        <Body name="humerus_l">
+          <FrameGeometry name="frame_geometry">
+            <socket_frame>..</socket_frame>
+            <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+          </FrameGeometry>
+          <attached_geometry>
+            <Mesh name="humerus_l_geom_1">
+              <socket_frame>..</socket_frame>
+              <scale_factors>1 1 1</scale_factors>
+              <Appearance>
+                <opacity>1</opacity>
+                <color>1 1 1</color>
+              </Appearance>
+              <mesh_file>lhumerus.obj</mesh_file>
+            </Mesh>
+          </attached_geometry>
+          <WrapObjectSet name="wrapobjectset">
+            <objects>
+              <WrapSphere name="deltoid">
+                <active>true</active>
+                <xyz_body_rotation>-0.19303300000000001 -0.238063 -0.38571800000000001</xyz_body_rotation>
+                <translation>0.0022000000000000001 -0.00089999999999999998 -0.0018</translation>
+                <quadrant>all</quadrant>
+                <Appearance>
+                  <visible>false</visible>
+                  <opacity>0.5</opacity>
+                  <color>0 1 1</color>
+                  <SurfaceProperties>
+                    <representation>3</representation>
+                  </SurfaceProperties>
+                </Appearance>
+                <radius>0.027199999999999998</radius>
+              </WrapSphere>
+              <WrapCylinder name="infra_cyl">
+                <active>true</active>
+                <xyz_body_rotation>1.56643 0.0061086500000000002 -0.95312399999999997</xyz_body_rotation>
+                <translation>0.0054000000000000003 -0.023 -0.0044000000000000003</translation>
+                <quadrant>-x</quadrant>
+                <Appearance>
+                  <visible>false</visible>
+                  <opacity>0.5</opacity>
+                  <color>0 1 1</color>
+                  <SurfaceProperties>
+                    <representation>3</representation>
+                  </SurfaceProperties>
+                </Appearance>
+                <radius>0.014</radius>
+                <length>0.12</length>
+              </WrapCylinder>
+              <WrapSphere name="inf_sup_sub">
+                <active>true</active>
+                <xyz_body_rotation>-0.19303300000000001 -0.238063 -0.38571800000000001</xyz_body_rotation>
+                <translation>-0.0016999999999999999 0.0018 -0.0012999999999999999</translation>
+                <quadrant>all</quadrant>
+                <Appearance>
+                  <visible>false</visible>
+                  <opacity>0.5</opacity>
+                  <color>0 1 1</color>
+                  <SurfaceProperties>
+                    <representation>3</representation>
+                  </SurfaceProperties>
+                </Appearance>
+                <radius>0.023099999999999999</radius>
+              </WrapSphere>
+              <WrapCylinder name="ter_min_cyl">
+                <active>true</active>
+                <xyz_body_rotation>1.56643 0.0061086500000000002 -1.47672</xyz_body_rotation>
+                <translation>0.0054000000000000003 -0.023 -0.0044000000000000003</translation>
+                <quadrant>-x</quadrant>
+                <Appearance>
+                  <visible>false</visible>
+                  <opacity>0.5</opacity>
+                  <color>0 1 1</color>
+                  <SurfaceProperties>
+                    <representation>3</representation>
+                  </SurfaceProperties>
+                </Appearance>
+                <radius>0.015</radius>
+                <length>0.1</length>
+              </WrapCylinder>
+              <WrapCylinder name="ter_lat_pec">
+                <active>true</active>
+                <xyz_body_rotation>1.56643 0.0061086500000000002 -0.95312399999999997</xyz_body_rotation>
+                <translation>0.0057000000000000002 -0.072999999999999995 -0.0041999999999999997</translation>
+                <quadrant>all</quadrant>
+                <Appearance>
+                  <visible>false</visible>
+                  <opacity>0.5</opacity>
+                  <color>0 1 1</color>
+                  <SurfaceProperties>
+                    <representation>3</representation>
+                  </SurfaceProperties>
+                </Appearance>
+                <radius>0.01</radius>
+                <length>0.1</length>
+              </WrapCylinder>
+            </objects>
+          </WrapObjectSet>
+          <mass>2.0519</mass>
+          <mass_center>-0.0064 -0.077600000000000002 -0.0035999999999999999</mass_center>
+          <inertia>0.0132 0.0019880000000000002 0.0132 0 0 0</inertia>
+        </Body>
+        <Body name="ulna_l">
+          <components>
+            <PhysicalOffsetFrame name="ulna_l_geom_frame_1">
+              <FrameGeometry name="frame_geometry">
+                <socket_frame>..</socket_frame>
+                <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <attached_geometry>
+                <Mesh name="ulna_l_geom_1">
+                  <socket_frame>..</socket_frame>
+                  <scale_factors>1 1 1</scale_factors>
+                  <Appearance>
+                    <opacity>1</opacity>
+                    <color>1 1 1</color>
+                  </Appearance>
+                  <mesh_file>lulna.obj</mesh_file>
+                </Mesh>
+              </attached_geometry>
+              <socket_parent>..</socket_parent>
+              <translation>0 0 0</translation>
+              <orientation>0.25 0 -0</orientation>
+            </PhysicalOffsetFrame>
+          </components>
+          <FrameGeometry name="frame_geometry">
+            <socket_frame>..</socket_frame>
+            <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+          </FrameGeometry>
+          <attached_geometry/>
+          <WrapObjectSet name="wrapobjectset">
+            <objects>
+              <WrapCylinder name="elbow">
+                <active>true</active>
+                <xyz_body_rotation>-2.51153 1.54654 2.7925300000000002</xyz_body_rotation>
+                <translation>0 0 0</translation>
+                <quadrant>y</quadrant>
+                <Appearance>
+                  <visible>false</visible>
+                  <opacity>0.5</opacity>
+                  <color>0 1 1</color>
+                  <SurfaceProperties>
+                    <representation>3</representation>
+                  </SurfaceProperties>
+                </Appearance>
+                <radius>0.019</radius>
+                <length>0.05</length>
+              </WrapCylinder>
+              <WrapCylinder name="elbow_circ">
+                <active>true</active>
+                <xyz_body_rotation>0.63006399999999996 -1.54654 0</xyz_body_rotation>
+                <translation>0 0 0</translation>
+                <quadrant>all</quadrant>
+                <Appearance>
+                  <visible>false</visible>
+                  <opacity>0.5</opacity>
+                  <color>0 1 1</color>
+                  <SurfaceProperties>
+                    <representation>3</representation>
+                  </SurfaceProperties>
+                </Appearance>
+                <radius>0.015</radius>
+                <length>0.05</length>
+              </WrapCylinder>
+              <WrapCylinder name="pron_quad">
+                <active>true</active>
+                <xyz_body_rotation>-1.2880499999999999 -0.232652 0</xyz_body_rotation>
+                <translation>0.036499999999999998 -0.2064 -0.057700000000000001</translation>
+                <quadrant>y</quadrant>
+                <Appearance>
+                  <visible>false</visible>
+                  <opacity>0.5</opacity>
+                  <color>0 1 1</color>
+                  <SurfaceProperties>
+                    <representation>3</representation>
+                  </SurfaceProperties>
+                </Appearance>
+                <radius>0.007</radius>
+                <length>0.1</length>
+              </WrapCylinder>
+            </objects>
+          </WrapObjectSet>
+          <mass>0.5464</mass>
+          <mass_center>0.0003 -0.063399999999999998 -0.0038999999999999998</mass_center>
+          <inertia>0.0030585 0.00045324999999999999 0.0030585 0 0 0</inertia>
+        </Body>
+        <Body name="radius_l">
+          <components>
+            <PhysicalOffsetFrame name="radius_l_geom_frame_1">
+              <FrameGeometry name="frame_geometry">
+                <socket_frame>..</socket_frame>
+                <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <attached_geometry>
+                <Mesh name="radius_l_geom_1">
+                  <socket_frame>..</socket_frame>
+                  <scale_factors>1 1 1</scale_factors>
+                  <Appearance>
+                    <opacity>1</opacity>
+                    <color>1 1 1</color>
+                  </Appearance>
+                  <mesh_file>lradius.obj</mesh_file>
+                </Mesh>
+              </attached_geometry>
+              <socket_parent>..</socket_parent>
+              <translation>0 0 0</translation>
+              <orientation>0.25 0 -0</orientation>
+            </PhysicalOffsetFrame>
+          </components>
+          <FrameGeometry name="frame_geometry">
+            <socket_frame>..</socket_frame>
+            <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+          </FrameGeometry>
+          <attached_geometry/>
+          <WrapObjectSet name="wrapobjectset">
+            <objects>
+              <WrapCylinder name="radius">
+                <active>true</active>
+                <xyz_body_rotation>-1.61286 -0.20228399999999999 -1.7770900000000001</xyz_body_rotation>
+                <translation>0.0035000000000000001 -0.032199999999999999 -0.00029999999999999997</translation>
+                <quadrant>-x</quadrant>
+                <Appearance>
+                  <visible>false</visible>
+                  <opacity>0.5</opacity>
+                  <color>0 1 1</color>
+                  <SurfaceProperties>
+                    <representation>3</representation>
+                  </SurfaceProperties>
+                </Appearance>
+                <radius>0.0092</radius>
+                <length>0.2</length>
+              </WrapCylinder>
+              <WrapCylinder name="supinator">
+                <active>true</active>
+                <xyz_body_rotation>-1.4887699999999999 0.00174533 -0</xyz_body_rotation>
+                <translation>0.0033999999999999998 -0.1196 -0.0068999999999999999</translation>
+                <quadrant>-y</quadrant>
+                <Appearance>
+                  <visible>false</visible>
+                  <opacity>0.5</opacity>
+                  <color>0 1 1</color>
+                  <SurfaceProperties>
+                    <representation>3</representation>
+                  </SurfaceProperties>
+                </Appearance>
+                <radius>0.009</radius>
+                <length>0.2</length>
+              </WrapCylinder>
+              <WrapCylinder name="ulna_radius">
+                <active>true</active>
+                <xyz_body_rotation>1.54095 0.256214 2.67035</xyz_body_rotation>
+                <translation>0.0146 -0.089099999999999999 0.00029999999999999997</translation>
+                <quadrant>-x</quadrant>
+                <Appearance>
+                  <visible>false</visible>
+                  <opacity>0.5</opacity>
+                  <color>0 1 1</color>
+                  <SurfaceProperties>
+                    <representation>3</representation>
+                  </SurfaceProperties>
+                </Appearance>
+                <radius>0.0071</radius>
+                <length>0.1</length>
+              </WrapCylinder>
+            </objects>
+          </WrapObjectSet>
+          <mass>0.5464</mass>
+          <mass_center>-0.0106 -0.1179 -0.0129</mass_center>
+          <inertia>0.0030585 0.00045324999999999999 0.0030585 0 0 0</inertia>
+        </Body>
+        <Body name="hand_l">
+          <components>
+            <PhysicalOffsetFrame name="hand_l_geom_frame_1">
+              <FrameGeometry name="frame_geometry">
+                <socket_frame>..</socket_frame>
+                <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <attached_geometry>
+                <Mesh name="hand_l_geom_1">
+                  <socket_frame>..</socket_frame>
+                  <scale_factors>1 1 1</scale_factors>
+                  <Appearance>
+                    <opacity>1</opacity>
+                    <color>1 1 1</color>
+                  </Appearance>
+                  <mesh_file>l_hand.obj</mesh_file>
+                </Mesh>
+              </attached_geometry>
+              <socket_parent>..</socket_parent>
+              <translation>0.25 0.21 0.0</translation>
+              <orientation>3.1400000000000001 0 3.1400000000000001</orientation>
+            </PhysicalOffsetFrame>
+          </components>
+          <FrameGeometry name="frame_geometry">
+            <socket_frame>..</socket_frame>
+            <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+          </FrameGeometry>
+          <attached_geometry/>
+          <mass>0.525</mass>
+          <mass_center>0.00059999999999999995 -0.090499999999999997 -0.036499999999999998</mass_center>
+          <inertia>0.00063869999999999997 0.00019039999999999999 0.00063869999999999997 0 0 0</inertia>
+        </Body>
+      </objects>
+    </BodySet>
+    <JointSet name="jointset">
+      <objects>
+        <WeldJoint name="base">
+          <socket_parent_frame>ground_offset</socket_parent_frame>
+          <socket_child_frame>thorax_offset</socket_child_frame>
+          <frames>
+            <PhysicalOffsetFrame name="ground_offset">
+              <FrameGeometry name="frame_geometry">
+                <socket_frame>..</socket_frame>
+                <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <socket_parent>/ground</socket_parent>
+              <translation>0 0 0</translation>
+              <orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+            <PhysicalOffsetFrame name="thorax_offset">
+              <FrameGeometry name="frame_geometry">
+                <socket_frame>..</socket_frame>
+                <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <socket_parent>/bodyset/thorax</socket_parent>
+              <translation>0 0 0</translation>
+              <orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+          </frames>
+        </WeldJoint>
+        <CustomJoint name="sc1_l">
+          <socket_parent_frame>thorax_offset</socket_parent_frame>
+          <socket_child_frame>clavicle_1_l_offset</socket_child_frame>
+          <coordinates>
+            <Coordinate name="SC_l_y">
+              <default_value>0.58444078</default_value>
+              <range>1.1345 0.3316</range>
+              <clamped>false</clamped>
+              <locked>false</locked>
+              <prescribed>false</prescribed>
+            </Coordinate>
+          </coordinates>
+          <frames>
+            <PhysicalOffsetFrame name="thorax_offset">
+              <FrameGeometry name="frame_geometry">
+                <socket_frame>..</socket_frame>
+                <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <socket_parent>/bodyset/thorax</socket_parent>
+              <translation>-0.0014 -0.0152 0.0028</translation>
+              <orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+            <PhysicalOffsetFrame name="clavicle_1_l_offset">
+              <FrameGeometry name="frame_geometry">
+                <socket_frame>..</socket_frame>
+                <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <socket_parent>/bodyset/clavicle_1_l</socket_parent>
+              <translation>0 0 0</translation>
+              <orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+          </frames>
+          <SpatialTransform>
+            <TransformAxis name="rotation1">
+              <coordinates>SC_l_y</coordinates>
+              <axis>0 1 0</axis>
+              <LinearFunction name="function">
+                <coefficients> 1 0</coefficients>
+              </LinearFunction>
+            </TransformAxis>
+            <TransformAxis name="rotation2">
+              <axis>0 0 1</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="rotation3">
+              <axis>1 0 0</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation1">
+              <axis>1 0 0</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation2">
+              <axis>0 1 0</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation3">
+              <axis>0 0 1</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+          </SpatialTransform>
+        </CustomJoint>
+        <WeldJoint name="rc_l">
+          <socket_parent_frame>radius_l_offset</socket_parent_frame>
+          <socket_child_frame>hand_l_offset</socket_child_frame>
+          <frames>
+            <PhysicalOffsetFrame name="radius_l_offset">
+              <FrameGeometry name="frame_geometry">
+                <socket_frame>..</socket_frame>
+                <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <socket_parent>/bodyset/radius_l</socket_parent>
+              <translation>-0.0169 -0.2251 -0.0712</translation>
+              <orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+            <PhysicalOffsetFrame name="hand_l_offset">
+              <FrameGeometry name="frame_geometry">
+                <socket_frame>..</socket_frame>
+                <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <socket_parent>/bodyset/hand_l</socket_parent>
+              <translation>0 0 0</translation>
+              <orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+          </frames>
+        </WeldJoint>
+        <CustomJoint name="sc2_l">
+          <socket_parent_frame>clavicle_1_l_offset</socket_parent_frame>
+          <socket_child_frame>clavicle_2_l_offset</socket_child_frame>
+          <coordinates>
+            <Coordinate name="SC_l_z">
+              <default_value>-0.0873</default_value>
+              <range>-0.0873 -0.5236</range>
+              <clamped>false</clamped>
+              <locked>false</locked>
+              <prescribed>false</prescribed>
+            </Coordinate>
+          </coordinates>
+          <frames>
+            <PhysicalOffsetFrame name="clavicle_1_l_offset">
+              <FrameGeometry name="frame_geometry">
+                <socket_frame>..</socket_frame>
+                <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <socket_parent>/bodyset/clavicle_1_l</socket_parent>
+              <translation>0 0 0</translation>
+              <orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+            <PhysicalOffsetFrame name="clavicle_2_l_offset">
+              <FrameGeometry name="frame_geometry">
+                <socket_frame>..</socket_frame>
+                <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <socket_parent>/bodyset/clavicle_2_l</socket_parent>
+              <translation>0 0 0</translation>
+              <orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+          </frames>
+          <SpatialTransform>
+            <TransformAxis name="rotation1">
+              <axis>0 1 0</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="rotation2">
+              <coordinates>SC_l_z</coordinates>
+              <axis>0 0 1</axis>
+              <LinearFunction name="function">
+                <coefficients> 1 0</coefficients>
+              </LinearFunction>
+            </TransformAxis>
+            <TransformAxis name="rotation3">
+              <axis>1 0 0</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation1">
+              <axis>1 0 0</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation2">
+              <axis>0 1 0</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation3">
+              <axis>0 0 1</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+          </SpatialTransform>
+        </CustomJoint>
+        <CustomJoint name="sc3_l">
+          <socket_parent_frame>clavicle_2_l_offset</socket_parent_frame>
+          <socket_child_frame>clavicle_l_offset</socket_child_frame>
+          <coordinates>
+            <Coordinate name="SC_l_x">
+              <default_value>0.57446378</default_value>
+              <range>0 1.4486000000000001</range>
+              <clamped>false</clamped>
+              <locked>false</locked>
+              <prescribed>false</prescribed>
+            </Coordinate>
+          </coordinates>
+          <frames>
+            <PhysicalOffsetFrame name="clavicle_2_l_offset">
+              <FrameGeometry name="frame_geometry">
+                <socket_frame>..</socket_frame>
+                <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <socket_parent>/bodyset/clavicle_2_l</socket_parent>
+              <translation>0 0 0</translation>
+              <orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+            <PhysicalOffsetFrame name="clavicle_l_offset">
+              <FrameGeometry name="frame_geometry">
+                <socket_frame>..</socket_frame>
+                <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <socket_parent>/bodyset/clavicle_l</socket_parent>
+              <translation>0 0 0</translation>
+              <orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+          </frames>
+          <SpatialTransform>
+            <TransformAxis name="rotation1">
+              <axis>0 1 0</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="rotation2">
+              <axis>0 0 1</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="rotation3">
+              <coordinates>SC_l_x</coordinates>
+              <axis>1 0 0</axis>
+              <LinearFunction name="function">
+                <coefficients> 1 0</coefficients>
+              </LinearFunction>
+            </TransformAxis>
+            <TransformAxis name="translation1">
+              <axis>1 0 0</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation2">
+              <axis>0 1 0</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation3">
+              <axis>0 0 1</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+          </SpatialTransform>
+        </CustomJoint>
+        <CustomJoint name="ac1_l">
+          <socket_parent_frame>clavicle_l_offset</socket_parent_frame>
+          <socket_child_frame>scapula_1_l_offset</socket_child_frame>
+          <coordinates>
+            <Coordinate name="AC_l_y">
+              <default_value>-0.7953626</default_value>
+              <range>-0.576 -1.2043</range>
+              <clamped>false</clamped>
+              <locked>false</locked>
+              <prescribed>false</prescribed>
+            </Coordinate>
+          </coordinates>
+          <frames>
+            <PhysicalOffsetFrame name="clavicle_l_offset">
+              <FrameGeometry name="frame_geometry">
+                <socket_frame>..</socket_frame>
+                <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <socket_parent>/bodyset/clavicle_l</socket_parent>
+              <translation>-0.2077 -0.0001 0.0282</translation>
+              <orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+            <PhysicalOffsetFrame name="scapula_1_l_offset">
+              <FrameGeometry name="frame_geometry">
+                <socket_frame>..</socket_frame>
+                <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <socket_parent>/bodyset/scapula_1_l</socket_parent>
+              <translation>0 0 0</translation>
+              <orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+          </frames>
+          <SpatialTransform>
+            <TransformAxis name="rotation1">
+              <coordinates>AC_l_y</coordinates>
+              <axis>0 1 0</axis>
+              <LinearFunction name="function">
+                <coefficients> 1 0</coefficients>
+              </LinearFunction>
+            </TransformAxis>
+            <TransformAxis name="rotation2">
+              <axis>0 0 1</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="rotation3">
+              <axis>1 0 0</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation1">
+              <axis>1 0 0</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation2">
+              <axis>0 1 0</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation3">
+              <axis>0 0 1</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+          </SpatialTransform>
+        </CustomJoint>
+        <CustomJoint name="ac2_l">
+          <socket_parent_frame>scapula_1_l_offset</socket_parent_frame>
+          <socket_child_frame>scapula_2_l_offset</socket_child_frame>
+          <coordinates>
+            <Coordinate name="AC_l_z">
+              <default_value>-0.00799797</default_value>
+              <range>0.3819 -0.3491</range>
+              <clamped>false</clamped>
+              <locked>false</locked>
+              <prescribed>false</prescribed>
+            </Coordinate>
+          </coordinates>
+          <frames>
+            <PhysicalOffsetFrame name="scapula_1_l_offset">
+              <FrameGeometry name="frame_geometry">
+                <socket_frame>..</socket_frame>
+                <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <socket_parent>/bodyset/scapula_1_l</socket_parent>
+              <translation>0 0 0</translation>
+              <orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+            <PhysicalOffsetFrame name="scapula_2_l_offset">
+              <FrameGeometry name="frame_geometry">
+                <socket_frame>..</socket_frame>
+                <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <socket_parent>/bodyset/scapula_2_l</socket_parent>
+              <translation>0 0 0</translation>
+              <orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+          </frames>
+          <SpatialTransform>
+            <TransformAxis name="rotation1">
+              <axis>0 1 0</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="rotation2">
+              <coordinates>AC_l_z</coordinates>
+              <axis>0 0 1</axis>
+              <LinearFunction name="function">
+                <coefficients> 1 0</coefficients>
+              </LinearFunction>
+            </TransformAxis>
+            <TransformAxis name="rotation3">
+              <axis>1 0 0</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation1">
+              <axis>1 0 0</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation2">
+              <axis>0 1 0</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation3">
+              <axis>0 0 1</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+          </SpatialTransform>
+        </CustomJoint>
+        <CustomJoint name="ac3_l">
+          <socket_parent_frame>scapula_2_l_offset</socket_parent_frame>
+          <socket_child_frame>scapula_l_offset</socket_child_frame>
+          <coordinates>
+            <Coordinate name="AC_l_x">
+              <default_value>-0.21051655</default_value>
+              <range>-0.29670000000000002 0.31419999999999998</range>
+              <clamped>false</clamped>
+              <locked>false</locked>
+              <prescribed>false</prescribed>
+            </Coordinate>
+          </coordinates>
+          <frames>
+            <PhysicalOffsetFrame name="scapula_2_l_offset">
+              <FrameGeometry name="frame_geometry">
+                <socket_frame>..</socket_frame>
+                <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <socket_parent>/bodyset/scapula_2_l</socket_parent>
+              <translation>0 0 0</translation>
+              <orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+            <PhysicalOffsetFrame name="scapula_l_offset">
+              <FrameGeometry name="frame_geometry">
+                <socket_frame>..</socket_frame>
+                <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <socket_parent>/bodyset/scapula_l</socket_parent>
+              <translation>0 0 0</translation>
+              <orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+          </frames>
+          <SpatialTransform>
+            <TransformAxis name="rotation1">
+              <axis>0 1 0</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="rotation2">
+              <axis>0 0 1</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="rotation3">
+              <coordinates>AC_l_x</coordinates>
+              <axis>1 0 0</axis>
+              <LinearFunction name="function">
+                <coefficients> 1 0</coefficients>
+              </LinearFunction>
+            </TransformAxis>
+            <TransformAxis name="translation1">
+              <axis>1 0 0</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation2">
+              <axis>0 1 0</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation3">
+              <axis>0 0 1</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+          </SpatialTransform>
+        </CustomJoint>
+        <CustomJoint name="gh1_l">
+          <socket_parent_frame>scapula_l_offset</socket_parent_frame>
+          <socket_child_frame>humerus_1_l_offset</socket_child_frame>
+          <coordinates>
+            <Coordinate name="GH_l_y">
+              <default_value>0.76557750628</default_value>
+              <range>-2.9670999999999998 3.0543</range>
+              <clamped>false</clamped>
+              <locked>false</locked>
+              <prescribed>false</prescribed>
+            </Coordinate>
+          </coordinates>
+          <frames>
+            <PhysicalOffsetFrame name="scapula_l_offset">
+              <FrameGeometry name="frame_geometry">
+                <socket_frame>..</socket_frame>
+                <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <socket_parent>/bodyset/scapula_l</socket_parent>
+              <translation>-0.002 -0.023 -0.0439</translation>
+              <orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+            <PhysicalOffsetFrame name="humerus_1_l_offset">
+              <FrameGeometry name="frame_geometry">
+                <socket_frame>..</socket_frame>
+                <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <socket_parent>/bodyset/humerus_1_l</socket_parent>
+              <translation>0 0 0</translation>
+              <orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+          </frames>
+          <SpatialTransform>
+            <TransformAxis name="rotation1">
+              <axis>1 0 0</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="rotation2">
+              <coordinates>GH_l_y</coordinates>
+              <axis>0 1 0</axis>
+              <LinearFunction name="function">
+                <coefficients> 1 0</coefficients>
+              </LinearFunction>
+            </TransformAxis>
+            <TransformAxis name="rotation3">
+              <axis>0 0 1</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation1">
+              <axis>1 0 0</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation2">
+              <axis>0 1 0</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation3">
+              <axis>0 0 1</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+          </SpatialTransform>
+        </CustomJoint>
+        <CustomJoint name="gh2_l">
+          <socket_parent_frame>humerus_1_l_offset</socket_parent_frame>
+          <socket_child_frame>humerus_2_l_offset</socket_child_frame>
+          <coordinates>
+            <Coordinate name="GH_l_z">
+              <default_value>0.00379958</default_value>
+              <range>0.5236 -1.4661</range>
+              <clamped>false</clamped>
+              <locked>false</locked>
+              <prescribed>false</prescribed>
+            </Coordinate>
+          </coordinates>
+          <frames>
+            <PhysicalOffsetFrame name="humerus_1_l_offset">
+              <FrameGeometry name="frame_geometry">
+                <socket_frame>..</socket_frame>
+                <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <socket_parent>/bodyset/humerus_1_l</socket_parent>
+              <translation>0 0 0</translation>
+              <orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+            <PhysicalOffsetFrame name="humerus_2_l_offset">
+              <FrameGeometry name="frame_geometry">
+                <socket_frame>..</socket_frame>
+                <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <socket_parent>/bodyset/humerus_2_l</socket_parent>
+              <translation>0 0 0</translation>
+              <orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+          </frames>
+          <SpatialTransform>
+            <TransformAxis name="rotation1">
+              <axis>1 0 0</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="rotation2">
+              <axis>0 1 0</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="rotation3">
+              <coordinates>GH_l_z</coordinates>
+              <axis>0 0 1</axis>
+              <LinearFunction name="function">
+                <coefficients> 1 0</coefficients>
+              </LinearFunction>
+            </TransformAxis>
+            <TransformAxis name="translation1">
+              <axis>1 0 0</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation2">
+              <axis>0 1 0</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation3">
+              <axis>0 0 1</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+          </SpatialTransform>
+        </CustomJoint>
+        <CustomJoint name="gh3_l">
+          <socket_parent_frame>humerus_2_l_offset</socket_parent_frame>
+          <socket_child_frame>humerus_l_offset</socket_child_frame>
+          <coordinates>
+            <Coordinate name="GH_l_yy">
+              <default_value>-0.60490773</default_value>
+              <range>-3.0891999999999999 3.1240999999999999</range>
+              <clamped>false</clamped>
+              <locked>false</locked>
+              <prescribed>false</prescribed>
+            </Coordinate>
+          </coordinates>
+          <frames>
+            <PhysicalOffsetFrame name="humerus_2_l_offset">
+              <FrameGeometry name="frame_geometry">
+                <socket_frame>..</socket_frame>
+                <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <socket_parent>/bodyset/humerus_2_l</socket_parent>
+              <translation>0 0 0</translation>
+              <orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+            <PhysicalOffsetFrame name="humerus_l_offset">
+              <FrameGeometry name="frame_geometry">
+                <socket_frame>..</socket_frame>
+                <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <socket_parent>/bodyset/humerus_l</socket_parent>
+              <translation>0 0 0</translation>
+              <orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+          </frames>
+          <SpatialTransform>
+            <TransformAxis name="rotation1">
+              <axis>1 0 0</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="rotation2">
+              <coordinates>GH_l_yy</coordinates>
+              <axis>0 1 0</axis>
+              <LinearFunction name="function">
+                <coefficients> 1 0</coefficients>
+              </LinearFunction>
+            </TransformAxis>
+            <TransformAxis name="rotation3">
+              <axis>0 0 1</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation1">
+              <axis>1 0 0</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation2">
+              <axis>0 1 0</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation3">
+              <axis>0 0 1</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+          </SpatialTransform>
+        </CustomJoint>
+        <CustomJoint name="hu_l">
+          <socket_parent_frame>humerus_l_offset</socket_parent_frame>
+          <socket_child_frame>ulna_l_offset</socket_child_frame>
+          <coordinates>
+            <Coordinate name="EL_l_x">
+              <default_value>0.08726646</default_value>
+              <range>0.087266460000000004 2.44346095</range>
+              <clamped>false</clamped>
+              <locked>false</locked>
+              <prescribed>false</prescribed>
+            </Coordinate>
+          </coordinates>
+          <frames>
+            <PhysicalOffsetFrame name="humerus_l_offset">
+              <FrameGeometry name="frame_geometry">
+                <socket_frame>..</socket_frame>
+                <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <socket_parent>/bodyset/humerus_l</socket_parent>
+              <translation>-0.0058 -0.2907 -0.0049</translation>
+              <orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+            <PhysicalOffsetFrame name="ulna_l_offset">
+              <FrameGeometry name="frame_geometry">
+                <socket_frame>..</socket_frame>
+                <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <socket_parent>/bodyset/ulna_l</socket_parent>
+              <translation>0 0 0</translation>
+              <orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+          </frames>
+          <SpatialTransform>
+            <TransformAxis name="rotation1">
+              <coordinates>EL_l_x</coordinates>
+              <axis>0.99976611999999998 0.0084460000000000004 -0.019909</axis>
+              <LinearFunction name="function">
+                <coefficients> 1 0</coefficients>
+              </LinearFunction>
+            </TransformAxis>
+            <TransformAxis name="rotation2">
+              <axis>0 1 0</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="rotation3">
+              <axis>0 0 1</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation1">
+              <axis>1 0 0</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation2">
+              <axis>0 1 0</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation3">
+              <axis>0 0 1</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+          </SpatialTransform>
+        </CustomJoint>
+        <CustomJoint name="ur_l">
+          <socket_parent_frame>ulna_l_offset</socket_parent_frame>
+          <socket_child_frame>radius_l_offset</socket_child_frame>
+          <coordinates>
+            <Coordinate name="PS_l_y">
+              <default_value>0.08726646</default_value>
+              <range>0.087266460000000004 2.7925268000000001</range>
+              <clamped>false</clamped>
+              <locked>false</locked>
+              <prescribed>false</prescribed>
+            </Coordinate>
+          </coordinates>
+          <frames>
+            <PhysicalOffsetFrame name="ulna_l_offset">
+              <FrameGeometry name="frame_geometry">
+                <socket_frame>..</socket_frame>
+                <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <socket_parent>/bodyset/ulna_l</socket_parent>
+              <translation>-0.0171 -0.0133 -0.0163</translation>
+              <orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+            <PhysicalOffsetFrame name="radius_l_offset">
+              <FrameGeometry name="frame_geometry">
+                <socket_frame>..</socket_frame>
+                <scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <socket_parent>/bodyset/radius_l</socket_parent>
+              <translation>0 0 0</translation>
+              <orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+          </frames>
+          <SpatialTransform>
+            <TransformAxis name="rotation1">
+              <coordinates>PS_l_y</coordinates>
+              <axis>-0.11329498 0.97405881999999999 0.19589196</axis>
+              <LinearFunction name="function">
+                <coefficients> 1 0</coefficients>
+              </LinearFunction>
+            </TransformAxis>
+            <TransformAxis name="rotation2">
+              <axis>0 0 1</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="rotation3">
+              <axis>1 0 0</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation1">
+              <axis>1 0 0</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation2">
+              <axis>0 1 0</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation3">
+              <axis>0 0 1</axis>
+              <Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+          </SpatialTransform>
+        </CustomJoint>
+      </objects>
+    </JointSet>
+    <ControllerSet name="controllerset">
+      <objects/>
+      <groups/>
+    </ControllerSet>
+    <ConstraintSet name="constraintset">
+      <objects/>
+    </ConstraintSet>
+    <ForceSet name="forceset">
+      <objects/>
+      <groups/>
+    </ForceSet>
+    <MarkerSet name="markerset">
+      <objects/>
+    </MarkerSet>
+    <ProbeSet name="probeset">
+      <objects/>
+    </ProbeSet>
+  </Model>
+</OpenSimDocument>

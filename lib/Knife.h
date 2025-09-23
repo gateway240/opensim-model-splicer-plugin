@@ -6,6 +6,7 @@
 namespace OpenSim {
 class Model;
 }
+void removeBodyByName(OpenSim::Model &model, const std::string &bodyName);
 
 void removeJointByName(OpenSim::Model &model, const std::string &jointName);
 
