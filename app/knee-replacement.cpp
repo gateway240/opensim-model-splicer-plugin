@@ -1,34 +1,37 @@
 #include <OpenSim/OpenSim.h>
+#include <filesystem>
 #include <iostream>
 #include <string>
 
 #include "Knife.h"
 
+namespace fs = std::filesystem;
+
 int main() {
   // Paths and names
-  const std::string modelsDir = ".";
-  const std::string outputDir = "../output";
+  const fs::path modelsDir = fs::path(".");
+  const fs::path outputDir = fs::path("..") / "output";
   const std::string baseModelName = "gait2392_thelen2003muscle";
   const std::string kneeModelLeftName = "Lerner_knee_left";
   const std::string kneeModelRightName = "Lerner_knee_right";
   const std::string suffix = "Lerner_knee";
   const std::string extOsim = "osim";
 
-  const std::string baseModelPath =
-      modelsDir + "/" + baseModelName + "." + extOsim;
-  const std::string kneeModelLeftPath =
-      modelsDir + "/" + kneeModelLeftName + "." + extOsim;
-  const std::string kneeModelRightPath =
-      modelsDir + "/" + kneeModelRightName + "." + extOsim;
+  const fs::path baseModelPath =
+      fs::path(modelsDir) / (baseModelName + "." + extOsim);
+  const fs::path kneeModelLeftPath =
+      fs::path(modelsDir) / (kneeModelLeftName + "." + extOsim);
+  const fs::path kneeModelRightPath =
+      fs::path(modelsDir) / (kneeModelRightName + "." + extOsim);
 
   try {
     // Load models
     OpenSim::Model baseModel(baseModelPath);
-    OpenSim::Model kneeModelLeft(kneeModelLeftPath);
-    OpenSim::Model kneeModelRight(kneeModelRightPath);
+    const OpenSim::Model kneeModelLeft(kneeModelLeftPath);
+    const OpenSim::Model kneeModelRight(kneeModelRightPath);
 
     // Rename base model
-    std::string newModelName = baseModelName + "_" + suffix;
+    const std::string newModelName = baseModelName + "_" + suffix;
     baseModel.setName(newModelName);
 
     // Delete forces from base model
@@ -51,7 +54,8 @@ int main() {
     baseModel.finalizeConnections();
 
     // Save the new model
-    std::string outputFile = outputDir + "/" + newModelName + "." + extOsim;
+    const fs::path outputFilePath = fs::path(outputDir) / (newModelName + "." + extOsim);
+    const std::string outputFile = outputFilePath.string();
     baseModel.print(outputFile);
 
     std::cout << "Knee replacement finished! Saved to " << outputFile
