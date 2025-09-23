@@ -11,18 +11,22 @@ int main() {
   const fs::path modelsDir = fs::path(".");
   const fs::path outputDir = fs::path("..") / "output";
   const std::string baseModelName = "gait2392_thelen2003muscle";
-  const std::string armModelRightName = "das3_v40600_right_rename_fixed";
-  const std::string suffix = "das_arm_right";
+  const std::string armModelRightName = "das3_v40600_right_rename";
+  const std::string armModelLeftName = "das3_v40600_left_mirror_rename";
+  const std::string suffix = "das_arm";
   const std::string extOsim = "osim";
 
   const fs::path baseModelPath = modelsDir / (baseModelName + "." + extOsim);
   const fs::path armModelRightPath =
       modelsDir / (armModelRightName + "." + extOsim);
+  const fs::path armModelLeftPath =
+      modelsDir / (armModelLeftName + "." + extOsim);
 
   try {
     // Load models
     OpenSim::Model baseModel(baseModelPath.string());
     OpenSim::Model armModelRight(armModelRightPath.string());
+    OpenSim::Model armModelLeft(armModelLeftPath.string());
 
     // Rename base model
     std::string newModelName = baseModelName + "_" + suffix;
@@ -33,16 +37,35 @@ int main() {
     baseModel.updProbeSet().clearAndDestroy();
 
     removeBodyByName(baseModel, "torso");
+    removeBodyByName(armModelLeft, "thorax");
 
     // Rename thorax to torso
     armModelRight.updBodySet().get("thorax").setName("torso");
     std::cout << "Renamed body!" << std::endl;
 
     addBodiesFromModel(baseModel, armModelRight);
+    addBodiesFromModel(baseModel, armModelLeft);
 
-    // First, remove "base" weld joint from arm model joint set
+    // Remove "base" weld joint from arm model joint set
     removeJointByName(armModelRight, "base");
     insertJointsFromModel(baseModel, armModelRight, "back");
+
+    removeJointByName(armModelLeft, "base");
+    insertJointsFromModel(baseModel, armModelLeft, "back");
+
+
+    // Update "sc1" joint frames
+    OpenSim::Joint &sc1r = baseModel.updJointSet().get("sc1_r");
+    OpenSim::PhysicalOffsetFrame &sc1rOffsetFrame = sc1r.upd_frames(0);
+    if (sc1rOffsetFrame.getName() == "thorax_offset") {
+      sc1rOffsetFrame.updSocket("parent").setConnecteePath("/bodyset/torso");
+    }
+
+    OpenSim::Joint &sc1l = baseModel.updJointSet().get("sc1_l");
+    OpenSim::PhysicalOffsetFrame &sc1lOffsetFrame = sc1l.upd_frames(0);
+    if (sc1lOffsetFrame.getName() == "thorax_offset") {
+      sc1lOffsetFrame.updSocket("parent").setConnecteePath("/bodyset/torso");
+    }
 
     // std::cout << armModelRight.getJointSet() << std::endl;
     // std::cout << baseModel.getBodySet() << std::endl;
@@ -66,19 +89,6 @@ int main() {
       std::cout << "Joint 'back' not found." << std::endl;
     }
 
-    // Update "sc1" joint frames
-    // std::cout << baseModel.getJointSet() << std::endl;
-    // OpenSim::PhysicalOffsetFrame& thoraxOffsetFrame =
-    // armModelRight.updComponent<OpenSim::PhysicalOffsetFrame>("/jointset/sc1_r/thorax_offset");
-    // thoraxOffsetFrame.printSocketInfo();
-    // auto& torso
-    // =baseModel.getComponent<OpenSim::PhysicalFrame>("/bodyset/torso");
-    // thoraxOffsetFrame.connectSocket_parent(torso);
-    // std::cout << thoraxOffsetFrame.getSocket("socket_parent").getName() <<
-    // std::endl ;
-    // thoraxOffsetFrame.updSocket("socket_parent").setConnecteePath("/bodyset/torso");
-
-    // Finalize connections
     baseModel.finalizeConnections();
 
     // Save the new model

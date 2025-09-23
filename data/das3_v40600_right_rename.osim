@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <OpenSimDocument Version="40600">
-  <Model name="das3_v40600_right_rename_fixed">
+  <Model name="das3_v40600_right_rename">
     <!--The model's ground reference frame.-->
 		<Ground name="ground">
       <!--The geometry used to display the axes of this Frame.-->
@@ -927,7 +927,7 @@
 								<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
               </FrameGeometry>
               <!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
-							<socket_parent>/bodyset/torso</socket_parent>
+							<socket_parent>/bodyset/thorax</socket_parent>
               <!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
 							<translation>0.0014 -0.0152 0.0028</translation>
               <!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->

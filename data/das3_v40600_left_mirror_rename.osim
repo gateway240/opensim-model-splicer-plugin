@@ -1,0 +1,2162 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<OpenSimDocument Version="40600">
+  <Model name="das3_v40600_left_mirror_rename">
+    <!--The model's ground reference frame.-->
+		<Ground name="ground">
+      <!--The geometry used to display the axes of this Frame.-->
+			<FrameGeometry name="frame_geometry">
+        <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+				<socket_frame>..</socket_frame>
+        <!--Scale factors in X, Y, Z directions respectively.-->
+				<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+      </FrameGeometry>
+    </Ground>
+    <!--Acceleration due to gravity, expressed in ground.-->
+		<gravity>0 -9.8066499999999994 0</gravity>
+    <!--List of bodies that make up this model.-->
+		<BodySet name="bodyset">
+      <objects>
+        <Body name="thorax">
+          <!--List of components that this component owns and serializes.-->
+					<components>
+            <PhysicalOffsetFrame name="thorax_geom_frame_1">
+              <!--The geometry used to display the axes of this Frame.-->
+							<FrameGeometry name="frame_geometry">
+                <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+								<socket_frame>..</socket_frame>
+                <!--Scale factors in X, Y, Z directions respectively.-->
+								<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <!--List of geometry attached to this Frame. Note, the geometry are treated as fixed to the frame and they share the transform of the frame when visualized-->
+							<attached_geometry>
+                <Mesh name="thorax_geom_1">
+                  <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+									<socket_frame>..</socket_frame>
+                  <!--Scale factors in X, Y, Z directions respectively.-->
+									<scale_factors>1 1 1</scale_factors>
+                  <!--Default appearance attributes for this Geometry-->
+									<Appearance>
+                    <!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+										<opacity>1</opacity>
+                    <!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+										<color>1 1 1</color>
+                  </Appearance>
+                  <!--Name of geometry file.-->
+									<mesh_file>ground_ribs.vtp</mesh_file>
+                </Mesh>
+              </attached_geometry>
+              <!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+							<socket_parent>..</socket_parent>
+              <!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+							<translation>0 0 0</translation>
+              <!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+							<orientation>-0 1.5700000000000001 -0</orientation>
+            </PhysicalOffsetFrame>
+            <PhysicalOffsetFrame name="thorax_geom_frame_2">
+              <!--The geometry used to display the axes of this Frame.-->
+							<FrameGeometry name="frame_geometry">
+                <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+								<socket_frame>..</socket_frame>
+                <!--Scale factors in X, Y, Z directions respectively.-->
+								<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <!--List of geometry attached to this Frame. Note, the geometry are treated as fixed to the frame and they share the transform of the frame when visualized-->
+							<attached_geometry>
+                <Mesh name="thorax_geom_2">
+                  <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+									<socket_frame>..</socket_frame>
+                  <!--Scale factors in X, Y, Z directions respectively.-->
+									<scale_factors>1 1 1</scale_factors>
+                  <!--Default appearance attributes for this Geometry-->
+									<Appearance>
+                    <!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+										<opacity>1</opacity>
+                    <!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+										<color>1 1 1</color>
+                  </Appearance>
+                  <!--Name of geometry file.-->
+									<mesh_file>ground_spine.vtp</mesh_file>
+                </Mesh>
+              </attached_geometry>
+              <!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+							<socket_parent>..</socket_parent>
+              <!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+							<translation>0 0 0</translation>
+              <!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+							<orientation>-0 1.5700000000000001 -0</orientation>
+            </PhysicalOffsetFrame>
+            <PhysicalOffsetFrame name="thorax_geom_frame_3">
+              <!--The geometry used to display the axes of this Frame.-->
+							<FrameGeometry name="frame_geometry">
+                <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+								<socket_frame>..</socket_frame>
+                <!--Scale factors in X, Y, Z directions respectively.-->
+								<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <!--List of geometry attached to this Frame. Note, the geometry are treated as fixed to the frame and they share the transform of the frame when visualized-->
+							<attached_geometry>
+                <Mesh name="thorax_geom_3">
+                  <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+									<socket_frame>..</socket_frame>
+                  <!--Scale factors in X, Y, Z directions respectively.-->
+									<scale_factors>1 1 1</scale_factors>
+                  <!--Default appearance attributes for this Geometry-->
+									<Appearance>
+                    <!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+										<opacity>1</opacity>
+                    <!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+										<color>1 1 1</color>
+                  </Appearance>
+                  <!--Name of geometry file.-->
+									<mesh_file>ground_skull.vtp</mesh_file>
+                </Mesh>
+              </attached_geometry>
+              <!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+							<socket_parent>..</socket_parent>
+              <!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+							<translation>0 0 0</translation>
+              <!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+							<orientation>-0 1.5700000000000001 -0</orientation>
+            </PhysicalOffsetFrame>
+            <PhysicalOffsetFrame name="thorax_geom_frame_4">
+              <!--The geometry used to display the axes of this Frame.-->
+							<FrameGeometry name="frame_geometry">
+                <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+								<socket_frame>..</socket_frame>
+                <!--Scale factors in X, Y, Z directions respectively.-->
+								<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <!--List of geometry attached to this Frame. Note, the geometry are treated as fixed to the frame and they share the transform of the frame when visualized-->
+							<attached_geometry>
+                <Mesh name="thorax_geom_4">
+                  <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+									<socket_frame>..</socket_frame>
+                  <!--Scale factors in X, Y, Z directions respectively.-->
+									<scale_factors>1 1 1</scale_factors>
+                  <!--Default appearance attributes for this Geometry-->
+									<Appearance>
+                    <!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+										<opacity>1</opacity>
+                    <!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+										<color>1 1 1</color>
+                  </Appearance>
+                  <!--Name of geometry file.-->
+									<mesh_file>ground_jaw.vtp</mesh_file>
+                </Mesh>
+              </attached_geometry>
+              <!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+							<socket_parent>..</socket_parent>
+              <!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+							<translation>0 0 0</translation>
+              <!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+							<orientation>-0 1.5700000000000001 -0</orientation>
+            </PhysicalOffsetFrame>
+          </components>
+          <!--The geometry used to display the axes of this Frame.-->
+					<FrameGeometry name="frame_geometry">
+            <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+						<socket_frame>..</socket_frame>
+            <!--Scale factors in X, Y, Z directions respectively.-->
+						<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+          </FrameGeometry>
+          <!--List of geometry attached to this Frame. Note, the geometry are treated as fixed to the frame and they share the transform of the frame when visualized-->
+					<attached_geometry/>
+          <!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
+					<WrapObjectSet name="wrapobjectset">
+            <objects>
+              <WrapEllipsoid name="serr_ant">
+                <!--Whether or not the WrapObject is considered active in computing paths-->
+								<active>true</active>
+                <!--Body-fixed Euler angle sequence for the orientation of the WrapObject-->
+								<xyz_body_rotation>0 0 0</xyz_body_rotation>
+                <!--Translation of the WrapObject.-->
+								<translation>0 -0.14860000000000001 0.0591</translation>
+                <!--The name of quadrant over which the wrap object is active. For example, '+x' or '-y' to set the sidedness of the wrapping.-->
+								<quadrant>all</quadrant>
+                <!--The length of the radii of the ellipsoid.-->
+								<dimensions>0.14699999999999999 0.2079 0.094399999999999998</dimensions>
+              </WrapEllipsoid>
+            </objects>
+          </WrapObjectSet>
+          <!--The mass of the body (kg)-->
+					<mass>20</mass>
+          <!--The location (Vec3) of the mass center in the body frame.-->
+					<mass_center>0 -0.14860000000000001 0.0591</mass_center>
+          <!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
+					<inertia>1.2984100000000001 0.55245 1.2984100000000001 0 0 0</inertia>
+        </Body>
+        <Body name="clavicle_1_l">
+          <!--The geometry used to display the axes of this Frame.-->
+					<FrameGeometry name="frame_geometry">
+            <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+						<socket_frame>..</socket_frame>
+            <!--Scale factors in X, Y, Z directions respectively.-->
+						<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+          </FrameGeometry>
+          <!--The mass of the body (kg)-->
+					<mass>0</mass>
+          <!--The location (Vec3) of the mass center in the body frame.-->
+					<mass_center>0 0 0</mass_center>
+          <!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
+					<inertia>0 0 0 0 0 0</inertia>
+        </Body>
+        <Body name="clavicle_2_l">
+          <!--The geometry used to display the axes of this Frame.-->
+					<FrameGeometry name="frame_geometry">
+            <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+						<socket_frame>..</socket_frame>
+            <!--Scale factors in X, Y, Z directions respectively.-->
+						<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+          </FrameGeometry>
+          <!--The mass of the body (kg)-->
+					<mass>0</mass>
+          <!--The location (Vec3) of the mass center in the body frame.-->
+					<mass_center>0 0 0</mass_center>
+          <!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
+					<inertia>0 0 0 0 0 0</inertia>
+        </Body>
+        <Body name="clavicle_l">
+          <!--The geometry used to display the axes of this Frame.-->
+					<FrameGeometry name="frame_geometry">
+            <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+						<socket_frame>..</socket_frame>
+            <!--Scale factors in X, Y, Z directions respectively.-->
+						<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+          </FrameGeometry>
+          <!--List of geometry attached to this Frame. Note, the geometry are treated as fixed to the frame and they share the transform of the frame when visualized-->
+					<attached_geometry>
+            <Mesh name="clavicle_l_geom_1">
+              <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+							<socket_frame>..</socket_frame>
+              <!--Scale factors in X, Y, Z directions respectively.-->
+							<scale_factors>1 1 1</scale_factors>
+              <!--Default appearance attributes for this Geometry-->
+							<Appearance>
+                <!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+								<opacity>1</opacity>
+                <!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+								<color>1 1 1</color>
+              </Appearance>
+              <!--Name of geometry file.-->
+							<mesh_file>lclavicle.obj</mesh_file>
+            </Mesh>
+          </attached_geometry>
+          <!--The mass of the body (kg)-->
+					<mass>0.156</mass>
+          <!--The location (Vec3) of the mass center in the body frame.-->
+					<mass_center>-0.0983 0.0167 0.0041999999999999997</mass_center>
+          <!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
+					<inertia>6.3999999999999997e-06 2.6299999999999999e-05 2.4300000000000001e-05 -6.7000000000000002e-06 -9.5000000000000005e-06 2.9000000000000002e-06</inertia>
+        </Body>
+        <Body name="scapula_1_l">
+          <!--The geometry used to display the axes of this Frame.-->
+					<FrameGeometry name="frame_geometry">
+            <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+						<socket_frame>..</socket_frame>
+            <!--Scale factors in X, Y, Z directions respectively.-->
+						<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+          </FrameGeometry>
+          <!--The mass of the body (kg)-->
+					<mass>0</mass>
+          <!--The location (Vec3) of the mass center in the body frame.-->
+					<mass_center>0 0 0</mass_center>
+          <!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
+					<inertia>0 0 0 0 0 0</inertia>
+        </Body>
+        <Body name="scapula_2_l">
+          <!--The geometry used to display the axes of this Frame.-->
+					<FrameGeometry name="frame_geometry">
+            <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+						<socket_frame>..</socket_frame>
+            <!--Scale factors in X, Y, Z directions respectively.-->
+						<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+          </FrameGeometry>
+          <!--The mass of the body (kg)-->
+					<mass>0</mass>
+          <!--The location (Vec3) of the mass center in the body frame.-->
+					<mass_center>0 0 0</mass_center>
+          <!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
+					<inertia>0 0 0 0 0 0</inertia>
+        </Body>
+        <Body name="scapula_l">
+          <!--The geometry used to display the axes of this Frame.-->
+					<FrameGeometry name="frame_geometry">
+            <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+						<socket_frame>..</socket_frame>
+            <!--Scale factors in X, Y, Z directions respectively.-->
+						<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+          </FrameGeometry>
+          <!--List of geometry attached to this Frame. Note, the geometry are treated as fixed to the frame and they share the transform of the frame when visualized-->
+					<attached_geometry>
+            <Mesh name="scapula_l_geom_1">
+              <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+							<socket_frame>..</socket_frame>
+              <!--Scale factors in X, Y, Z directions respectively.-->
+							<scale_factors>1 1 1</scale_factors>
+              <!--Default appearance attributes for this Geometry-->
+							<Appearance>
+                <!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+								<opacity>1</opacity>
+                <!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+								<color>1 1 1</color>
+              </Appearance>
+              <!--Name of geometry file.-->
+							<mesh_file>lscapula.obj</mesh_file>
+            </Mesh>
+          </attached_geometry>
+          <!--The mass of the body (kg)-->
+					<mass>0.7054</mass>
+          <!--The location (Vec3) of the mass center in the body frame.-->
+					<mass_center>0.053 -0.0229 -0.0247</mass_center>
+          <!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
+					<inertia>0.001 0.001 0.001 0 0 0</inertia>
+        </Body>
+        <Body name="humerus_1_l">
+          <!--The geometry used to display the axes of this Frame.-->
+					<FrameGeometry name="frame_geometry">
+            <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+						<socket_frame>..</socket_frame>
+            <!--Scale factors in X, Y, Z directions respectively.-->
+						<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+          </FrameGeometry>
+          <!--The mass of the body (kg)-->
+					<mass>0</mass>
+          <!--The location (Vec3) of the mass center in the body frame.-->
+					<mass_center>0 0 0</mass_center>
+          <!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
+					<inertia>0 0 0 0 0 0</inertia>
+        </Body>
+        <Body name="humerus_2_l">
+          <!--The geometry used to display the axes of this Frame.-->
+					<FrameGeometry name="frame_geometry">
+            <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+						<socket_frame>..</socket_frame>
+            <!--Scale factors in X, Y, Z directions respectively.-->
+						<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+          </FrameGeometry>
+          <!--The mass of the body (kg)-->
+					<mass>0</mass>
+          <!--The location (Vec3) of the mass center in the body frame.-->
+					<mass_center>0 0 0</mass_center>
+          <!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
+					<inertia>0 0 0 0 0 0</inertia>
+        </Body>
+        <Body name="humerus_l">
+          <!--The geometry used to display the axes of this Frame.-->
+					<FrameGeometry name="frame_geometry">
+            <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+						<socket_frame>..</socket_frame>
+            <!--Scale factors in X, Y, Z directions respectively.-->
+						<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+          </FrameGeometry>
+          <!--List of geometry attached to this Frame. Note, the geometry are treated as fixed to the frame and they share the transform of the frame when visualized-->
+					<attached_geometry>
+            <Mesh name="humerus_l_geom_1">
+              <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+							<socket_frame>..</socket_frame>
+              <!--Scale factors in X, Y, Z directions respectively.-->
+							<scale_factors>1 1 1</scale_factors>
+              <!--Default appearance attributes for this Geometry-->
+							<Appearance>
+                <!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+								<opacity>1</opacity>
+                <!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+								<color>1 1 1</color>
+              </Appearance>
+              <!--Name of geometry file.-->
+							<mesh_file>lhumerus.obj</mesh_file>
+            </Mesh>
+          </attached_geometry>
+          <!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
+					<WrapObjectSet name="wrapobjectset">
+            <objects>
+              <WrapSphere name="deltoid">
+                <!--Whether or not the WrapObject is considered active in computing paths-->
+								<active>true</active>
+                <!--Body-fixed Euler angle sequence for the orientation of the WrapObject-->
+								<xyz_body_rotation>-0.19303300000000001 -0.238063 -0.38571800000000001</xyz_body_rotation>
+                <!--Translation of the WrapObject.-->
+								<translation>0.0022000000000000001 -0.00089999999999999998 -0.0018</translation>
+                <!--The name of quadrant over which the wrap object is active. For example, '+x' or '-y' to set the sidedness of the wrapping.-->
+								<quadrant>all</quadrant>
+                <!--Default appearance for this Geometry-->
+								<Appearance>
+                  <!--Flag indicating whether the associated Geometry is visible or hidden.-->
+									<visible>false</visible>
+                  <!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+									<opacity>0.5</opacity>
+                  <!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+									<color>0 1 1</color>
+                  <!--Visuals applied to surfaces associated with this Appearance.-->
+									<SurfaceProperties>
+                    <!--The representation (1:Points, 2:Wire, 3:Shaded) used to display the object.-->
+										<representation>3</representation>
+                  </SurfaceProperties>
+                </Appearance>
+                <!--The radius of the sphere.-->
+								<radius>0.027199999999999998</radius>
+              </WrapSphere>
+              <WrapSphere name="inf_sup_sub">
+                <!--Whether or not the WrapObject is considered active in computing paths-->
+								<active>true</active>
+                <!--Body-fixed Euler angle sequence for the orientation of the WrapObject-->
+								<xyz_body_rotation>-0.19303300000000001 -0.238063 -0.38571800000000001</xyz_body_rotation>
+                <!--Translation of the WrapObject.-->
+								<translation>-0.0016999999999999999 0.0018 -0.0012999999999999999</translation>
+                <!--The name of quadrant over which the wrap object is active. For example, '+x' or '-y' to set the sidedness of the wrapping.-->
+								<quadrant>all</quadrant>
+                <!--Default appearance for this Geometry-->
+								<Appearance>
+                  <!--Flag indicating whether the associated Geometry is visible or hidden.-->
+									<visible>false</visible>
+                  <!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+									<opacity>0.5</opacity>
+                  <!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+									<color>0 1 1</color>
+                  <!--Visuals applied to surfaces associated with this Appearance.-->
+									<SurfaceProperties>
+                    <!--The representation (1:Points, 2:Wire, 3:Shaded) used to display the object.-->
+										<representation>3</representation>
+                  </SurfaceProperties>
+                </Appearance>
+                <!--The radius of the sphere.-->
+								<radius>0.023099999999999999</radius>
+              </WrapSphere>
+              <WrapCylinder name="infra_cyl">
+                <!--Whether or not the WrapObject is considered active in computing paths-->
+								<active>true</active>
+                <!--Body-fixed Euler angle sequence for the orientation of the WrapObject-->
+								<xyz_body_rotation>1.56643 0.0061086500000000002 -0.95312399999999997</xyz_body_rotation>
+                <!--Translation of the WrapObject.-->
+								<translation>0.0054000000000000003 -0.023 -0.0044000000000000003</translation>
+                <!--The name of quadrant over which the wrap object is active. For example, '+x' or '-y' to set the sidedness of the wrapping.-->
+								<quadrant>-x</quadrant>
+                <!--Default appearance for this Geometry-->
+								<Appearance>
+                  <!--Flag indicating whether the associated Geometry is visible or hidden.-->
+									<visible>false</visible>
+                  <!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+									<opacity>0.5</opacity>
+                  <!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+									<color>0 1 1</color>
+                  <!--Visuals applied to surfaces associated with this Appearance.-->
+									<SurfaceProperties>
+                    <!--The representation (1:Points, 2:Wire, 3:Shaded) used to display the object.-->
+										<representation>3</representation>
+                  </SurfaceProperties>
+                </Appearance>
+                <!--The radius of the cylinder.-->
+								<radius>0.014</radius>
+                <!--The length of the cylinder.-->
+								<length>0.12</length>
+              </WrapCylinder>
+              <WrapCylinder name="ter_min_cyl">
+                <!--Whether or not the WrapObject is considered active in computing paths-->
+								<active>true</active>
+                <!--Body-fixed Euler angle sequence for the orientation of the WrapObject-->
+								<xyz_body_rotation>1.56643 0.0061086500000000002 -1.47672</xyz_body_rotation>
+                <!--Translation of the WrapObject.-->
+								<translation>0.0054000000000000003 -0.023 -0.0044000000000000003</translation>
+                <!--The name of quadrant over which the wrap object is active. For example, '+x' or '-y' to set the sidedness of the wrapping.-->
+								<quadrant>-x</quadrant>
+                <!--Default appearance for this Geometry-->
+								<Appearance>
+                  <!--Flag indicating whether the associated Geometry is visible or hidden.-->
+									<visible>false</visible>
+                  <!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+									<opacity>0.5</opacity>
+                  <!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+									<color>0 1 1</color>
+                  <!--Visuals applied to surfaces associated with this Appearance.-->
+									<SurfaceProperties>
+                    <!--The representation (1:Points, 2:Wire, 3:Shaded) used to display the object.-->
+										<representation>3</representation>
+                  </SurfaceProperties>
+                </Appearance>
+                <!--The radius of the cylinder.-->
+								<radius>0.015</radius>
+                <!--The length of the cylinder.-->
+								<length>0.1</length>
+              </WrapCylinder>
+              <WrapCylinder name="ter_lat_pec">
+                <!--Whether or not the WrapObject is considered active in computing paths-->
+								<active>true</active>
+                <!--Body-fixed Euler angle sequence for the orientation of the WrapObject-->
+								<xyz_body_rotation>1.56643 0.0061086500000000002 -0.95312399999999997</xyz_body_rotation>
+                <!--Translation of the WrapObject.-->
+								<translation>0.0057000000000000002 -0.072999999999999995 -0.0041999999999999997</translation>
+                <!--The name of quadrant over which the wrap object is active. For example, '+x' or '-y' to set the sidedness of the wrapping.-->
+								<quadrant>all</quadrant>
+                <!--Default appearance for this Geometry-->
+								<Appearance>
+                  <!--Flag indicating whether the associated Geometry is visible or hidden.-->
+									<visible>false</visible>
+                  <!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+									<opacity>0.5</opacity>
+                  <!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+									<color>0 1 1</color>
+                  <!--Visuals applied to surfaces associated with this Appearance.-->
+									<SurfaceProperties>
+                    <!--The representation (1:Points, 2:Wire, 3:Shaded) used to display the object.-->
+										<representation>3</representation>
+                  </SurfaceProperties>
+                </Appearance>
+                <!--The radius of the cylinder.-->
+								<radius>0.01</radius>
+                <!--The length of the cylinder.-->
+								<length>0.1</length>
+              </WrapCylinder>
+            </objects>
+          </WrapObjectSet>
+          <!--The mass of the body (kg)-->
+					<mass>2.0519</mass>
+          <!--The location (Vec3) of the mass center in the body frame.-->
+					<mass_center>-0.0064 -0.077600000000000002 -0.0035999999999999999</mass_center>
+          <!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
+					<inertia>0.0132 0.0019880000000000002 0.0132 0 0 0</inertia>
+        </Body>
+        <Body name="ulna_l">
+          <!--List of components that this component owns and serializes.-->
+					<components>
+            <PhysicalOffsetFrame name="ulna_l_geom_frame_1">
+              <!--The geometry used to display the axes of this Frame.-->
+							<FrameGeometry name="frame_geometry">
+                <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+								<socket_frame>..</socket_frame>
+                <!--Scale factors in X, Y, Z directions respectively.-->
+								<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <!--List of geometry attached to this Frame. Note, the geometry are treated as fixed to the frame and they share the transform of the frame when visualized-->
+							<attached_geometry>
+                <Mesh name="ulna_l_geom_1">
+                  <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+									<socket_frame>..</socket_frame>
+                  <!--Scale factors in X, Y, Z directions respectively.-->
+									<scale_factors>1 1 1</scale_factors>
+                  <!--Default appearance attributes for this Geometry-->
+									<Appearance>
+                    <!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+										<opacity>1</opacity>
+                    <!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+										<color>1 1 1</color>
+                  </Appearance>
+                  <!--Name of geometry file.-->
+									<mesh_file>lulna.obj</mesh_file>
+                </Mesh>
+              </attached_geometry>
+              <!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+							<socket_parent>..</socket_parent>
+              <!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+							<translation>0 0 0</translation>
+              <!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+							<orientation>0.25 0 -0</orientation>
+            </PhysicalOffsetFrame>
+          </components>
+          <!--The geometry used to display the axes of this Frame.-->
+					<FrameGeometry name="frame_geometry">
+            <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+						<socket_frame>..</socket_frame>
+            <!--Scale factors in X, Y, Z directions respectively.-->
+						<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+          </FrameGeometry>
+          <!--List of geometry attached to this Frame. Note, the geometry are treated as fixed to the frame and they share the transform of the frame when visualized-->
+					<attached_geometry/>
+          <!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
+					<WrapObjectSet name="wrapobjectset">
+            <objects>
+              <WrapCylinder name="elbow">
+                <!--Whether or not the WrapObject is considered active in computing paths-->
+								<active>true</active>
+                <!--Body-fixed Euler angle sequence for the orientation of the WrapObject-->
+								<xyz_body_rotation>-2.51153 1.54654 2.7925300000000002</xyz_body_rotation>
+                <!--Translation of the WrapObject.-->
+								<translation>0 0 0</translation>
+                <!--The name of quadrant over which the wrap object is active. For example, '+x' or '-y' to set the sidedness of the wrapping.-->
+								<quadrant>y</quadrant>
+                <!--Default appearance for this Geometry-->
+								<Appearance>
+                  <!--Flag indicating whether the associated Geometry is visible or hidden.-->
+									<visible>false</visible>
+                  <!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+									<opacity>0.5</opacity>
+                  <!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+									<color>0 1 1</color>
+                  <!--Visuals applied to surfaces associated with this Appearance.-->
+									<SurfaceProperties>
+                    <!--The representation (1:Points, 2:Wire, 3:Shaded) used to display the object.-->
+										<representation>3</representation>
+                  </SurfaceProperties>
+                </Appearance>
+                <!--The radius of the cylinder.-->
+								<radius>0.019</radius>
+                <!--The length of the cylinder.-->
+								<length>0.05</length>
+              </WrapCylinder>
+              <WrapCylinder name="elbow_circ">
+                <!--Whether or not the WrapObject is considered active in computing paths-->
+								<active>true</active>
+                <!--Body-fixed Euler angle sequence for the orientation of the WrapObject-->
+								<xyz_body_rotation>0.63006399999999996 -1.54654 0</xyz_body_rotation>
+                <!--Translation of the WrapObject.-->
+								<translation>0 0 0</translation>
+                <!--The name of quadrant over which the wrap object is active. For example, '+x' or '-y' to set the sidedness of the wrapping.-->
+								<quadrant>all</quadrant>
+                <!--Default appearance for this Geometry-->
+								<Appearance>
+                  <!--Flag indicating whether the associated Geometry is visible or hidden.-->
+									<visible>false</visible>
+                  <!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+									<opacity>0.5</opacity>
+                  <!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+									<color>0 1 1</color>
+                  <!--Visuals applied to surfaces associated with this Appearance.-->
+									<SurfaceProperties>
+                    <!--The representation (1:Points, 2:Wire, 3:Shaded) used to display the object.-->
+										<representation>3</representation>
+                  </SurfaceProperties>
+                </Appearance>
+                <!--The radius of the cylinder.-->
+								<radius>0.015</radius>
+                <!--The length of the cylinder.-->
+								<length>0.05</length>
+              </WrapCylinder>
+              <WrapCylinder name="pron_quad">
+                <!--Whether or not the WrapObject is considered active in computing paths-->
+								<active>true</active>
+                <!--Body-fixed Euler angle sequence for the orientation of the WrapObject-->
+								<xyz_body_rotation>-1.2880499999999999 -0.232652 0</xyz_body_rotation>
+                <!--Translation of the WrapObject.-->
+								<translation>0.036499999999999998 -0.2064 -0.057700000000000001</translation>
+                <!--The name of quadrant over which the wrap object is active. For example, '+x' or '-y' to set the sidedness of the wrapping.-->
+								<quadrant>y</quadrant>
+                <!--Default appearance for this Geometry-->
+								<Appearance>
+                  <!--Flag indicating whether the associated Geometry is visible or hidden.-->
+									<visible>false</visible>
+                  <!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+									<opacity>0.5</opacity>
+                  <!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+									<color>0 1 1</color>
+                  <!--Visuals applied to surfaces associated with this Appearance.-->
+									<SurfaceProperties>
+                    <!--The representation (1:Points, 2:Wire, 3:Shaded) used to display the object.-->
+										<representation>3</representation>
+                  </SurfaceProperties>
+                </Appearance>
+                <!--The radius of the cylinder.-->
+								<radius>0.007</radius>
+                <!--The length of the cylinder.-->
+								<length>0.1</length>
+              </WrapCylinder>
+            </objects>
+          </WrapObjectSet>
+          <!--The mass of the body (kg)-->
+					<mass>0.5464</mass>
+          <!--The location (Vec3) of the mass center in the body frame.-->
+					<mass_center>0.0003 -0.063399999999999998 -0.0038999999999999998</mass_center>
+          <!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
+					<inertia>0.0030585 0.00045324999999999999 0.0030585 0 0 0</inertia>
+        </Body>
+        <Body name="radius_l">
+          <!--List of components that this component owns and serializes.-->
+					<components>
+            <PhysicalOffsetFrame name="radius_l_geom_frame_1">
+              <!--The geometry used to display the axes of this Frame.-->
+							<FrameGeometry name="frame_geometry">
+                <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+								<socket_frame>..</socket_frame>
+                <!--Scale factors in X, Y, Z directions respectively.-->
+								<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <!--List of geometry attached to this Frame. Note, the geometry are treated as fixed to the frame and they share the transform of the frame when visualized-->
+							<attached_geometry>
+                <Mesh name="radius_l_geom_1">
+                  <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+									<socket_frame>..</socket_frame>
+                  <!--Scale factors in X, Y, Z directions respectively.-->
+									<scale_factors>1 1 1</scale_factors>
+                  <!--Default appearance attributes for this Geometry-->
+									<Appearance>
+                    <!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+										<opacity>1</opacity>
+                    <!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+										<color>1 1 1</color>
+                  </Appearance>
+                  <!--Name of geometry file.-->
+									<mesh_file>lradius.obj</mesh_file>
+                </Mesh>
+              </attached_geometry>
+              <!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+							<socket_parent>..</socket_parent>
+              <!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+							<translation>0 0 0</translation>
+              <!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+							<orientation>0.25 0 -0</orientation>
+            </PhysicalOffsetFrame>
+          </components>
+          <!--The geometry used to display the axes of this Frame.-->
+					<FrameGeometry name="frame_geometry">
+            <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+						<socket_frame>..</socket_frame>
+            <!--Scale factors in X, Y, Z directions respectively.-->
+						<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+          </FrameGeometry>
+          <!--List of geometry attached to this Frame. Note, the geometry are treated as fixed to the frame and they share the transform of the frame when visualized-->
+					<attached_geometry/>
+          <!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
+					<WrapObjectSet name="wrapobjectset">
+            <objects>
+              <WrapCylinder name="radius">
+                <!--Whether or not the WrapObject is considered active in computing paths-->
+								<active>true</active>
+                <!--Body-fixed Euler angle sequence for the orientation of the WrapObject-->
+								<xyz_body_rotation>-1.61286 -0.20228399999999999 -1.7770900000000001</xyz_body_rotation>
+                <!--Translation of the WrapObject.-->
+								<translation>0.0035000000000000001 -0.032199999999999999 -0.00029999999999999997</translation>
+                <!--The name of quadrant over which the wrap object is active. For example, '+x' or '-y' to set the sidedness of the wrapping.-->
+								<quadrant>-x</quadrant>
+                <!--Default appearance for this Geometry-->
+								<Appearance>
+                  <!--Flag indicating whether the associated Geometry is visible or hidden.-->
+									<visible>false</visible>
+                  <!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+									<opacity>0.5</opacity>
+                  <!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+									<color>0 1 1</color>
+                  <!--Visuals applied to surfaces associated with this Appearance.-->
+									<SurfaceProperties>
+                    <!--The representation (1:Points, 2:Wire, 3:Shaded) used to display the object.-->
+										<representation>3</representation>
+                  </SurfaceProperties>
+                </Appearance>
+                <!--The radius of the cylinder.-->
+								<radius>0.0092</radius>
+                <!--The length of the cylinder.-->
+								<length>0.2</length>
+              </WrapCylinder>
+              <WrapCylinder name="supinator">
+                <!--Whether or not the WrapObject is considered active in computing paths-->
+								<active>true</active>
+                <!--Body-fixed Euler angle sequence for the orientation of the WrapObject-->
+								<xyz_body_rotation>-1.4887699999999999 0.00174533 -0</xyz_body_rotation>
+                <!--Translation of the WrapObject.-->
+								<translation>0.0033999999999999998 -0.1196 -0.0068999999999999999</translation>
+                <!--The name of quadrant over which the wrap object is active. For example, '+x' or '-y' to set the sidedness of the wrapping.-->
+								<quadrant>-y</quadrant>
+                <!--Default appearance for this Geometry-->
+								<Appearance>
+                  <!--Flag indicating whether the associated Geometry is visible or hidden.-->
+									<visible>false</visible>
+                  <!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+									<opacity>0.5</opacity>
+                  <!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+									<color>0 1 1</color>
+                  <!--Visuals applied to surfaces associated with this Appearance.-->
+									<SurfaceProperties>
+                    <!--The representation (1:Points, 2:Wire, 3:Shaded) used to display the object.-->
+										<representation>3</representation>
+                  </SurfaceProperties>
+                </Appearance>
+                <!--The radius of the cylinder.-->
+								<radius>0.009</radius>
+                <!--The length of the cylinder.-->
+								<length>0.2</length>
+              </WrapCylinder>
+              <WrapCylinder name="ulna_radius">
+                <!--Whether or not the WrapObject is considered active in computing paths-->
+								<active>true</active>
+                <!--Body-fixed Euler angle sequence for the orientation of the WrapObject-->
+								<xyz_body_rotation>1.54095 0.256214 2.67035</xyz_body_rotation>
+                <!--Translation of the WrapObject.-->
+								<translation>0.0146 -0.089099999999999999 0.00029999999999999997</translation>
+                <!--The name of quadrant over which the wrap object is active. For example, '+x' or '-y' to set the sidedness of the wrapping.-->
+								<quadrant>-x</quadrant>
+                <!--Default appearance for this Geometry-->
+								<Appearance>
+                  <!--Flag indicating whether the associated Geometry is visible or hidden.-->
+									<visible>false</visible>
+                  <!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+									<opacity>0.5</opacity>
+                  <!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+									<color>0 1 1</color>
+                  <!--Visuals applied to surfaces associated with this Appearance.-->
+									<SurfaceProperties>
+                    <!--The representation (1:Points, 2:Wire, 3:Shaded) used to display the object.-->
+										<representation>3</representation>
+                  </SurfaceProperties>
+                </Appearance>
+                <!--The radius of the cylinder.-->
+								<radius>0.0071</radius>
+                <!--The length of the cylinder.-->
+								<length>0.1</length>
+              </WrapCylinder>
+            </objects>
+          </WrapObjectSet>
+          <!--The mass of the body (kg)-->
+					<mass>0.5464</mass>
+          <!--The location (Vec3) of the mass center in the body frame.-->
+					<mass_center>-0.0106 -0.1179 -0.0129</mass_center>
+          <!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
+					<inertia>0.0030585 0.00045324999999999999 0.0030585 0 0 0</inertia>
+        </Body>
+        <Body name="hand_l">
+          <!--List of components that this component owns and serializes.-->
+					<components>
+            <PhysicalOffsetFrame name="hand_l_geom_frame_1">
+              <!--The geometry used to display the axes of this Frame.-->
+							<FrameGeometry name="frame_geometry">
+                <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+								<socket_frame>..</socket_frame>
+                <!--Scale factors in X, Y, Z directions respectively.-->
+								<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <!--List of geometry attached to this Frame. Note, the geometry are treated as fixed to the frame and they share the transform of the frame when visualized-->
+							<attached_geometry>
+                <Mesh name="hand_l_geom_1">
+                  <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+									<socket_frame>..</socket_frame>
+                  <!--Scale factors in X, Y, Z directions respectively.-->
+									<scale_factors>1 1 1</scale_factors>
+                  <!--Default appearance attributes for this Geometry-->
+									<Appearance>
+                    <!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+										<opacity>1</opacity>
+                    <!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+										<color>1 1 1</color>
+                  </Appearance>
+                  <!--Name of geometry file.-->
+									<mesh_file>l_hand.obj</mesh_file>
+                </Mesh>
+              </attached_geometry>
+              <!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+							<socket_parent>..</socket_parent>
+              <!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+							<translation>0.25 0.21 0.0</translation>
+              <!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+							<orientation>3.1400000000000001 0 3.1400000000000001</orientation>
+            </PhysicalOffsetFrame>
+          </components>
+          <!--The geometry used to display the axes of this Frame.-->
+					<FrameGeometry name="frame_geometry">
+            <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+						<socket_frame>..</socket_frame>
+            <!--Scale factors in X, Y, Z directions respectively.-->
+						<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+          </FrameGeometry>
+          <!--List of geometry attached to this Frame. Note, the geometry are treated as fixed to the frame and they share the transform of the frame when visualized-->
+					<attached_geometry/>
+          <!--The mass of the body (kg)-->
+					<mass>0.525</mass>
+          <!--The location (Vec3) of the mass center in the body frame.-->
+					<mass_center>0.00059999999999999995 -0.090499999999999997 -0.036499999999999998</mass_center>
+          <!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
+					<inertia>0.00063869999999999997 0.00019039999999999999 0.00063869999999999997 0 0 0</inertia>
+        </Body>
+      </objects>
+    </BodySet>
+    <!--List of joints that connect the bodies.-->
+		<JointSet name="jointset">
+      <objects>
+        <WeldJoint name="base">
+          <!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The parent frame for the joint.).-->
+					<socket_parent_frame>ground_offset</socket_parent_frame>
+          <!--Path to a Component that satisfies the Socket 'child_frame' of type PhysicalFrame (description: The child frame for the joint.).-->
+					<socket_child_frame>thorax_offset</socket_child_frame>
+          <!--Physical offset frames owned by the Joint that are typically used to satisfy the owning Joint's parent and child frame connections (sockets). PhysicalOffsetFrames are often used to describe the fixed transformation from a Body's origin to another location of interest on the Body (e.g., the joint center). When the joint is deleted, so are the PhysicalOffsetFrame components in this list.-->
+					<frames>
+            <PhysicalOffsetFrame name="ground_offset">
+              <!--The geometry used to display the axes of this Frame.-->
+							<FrameGeometry name="frame_geometry">
+                <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+								<socket_frame>..</socket_frame>
+                <!--Scale factors in X, Y, Z directions respectively.-->
+								<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+							<socket_parent>/ground</socket_parent>
+              <!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+							<translation>0 0 0</translation>
+              <!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+							<orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+            <PhysicalOffsetFrame name="thorax_offset">
+              <!--The geometry used to display the axes of this Frame.-->
+							<FrameGeometry name="frame_geometry">
+                <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+								<socket_frame>..</socket_frame>
+                <!--Scale factors in X, Y, Z directions respectively.-->
+								<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+							<socket_parent>/bodyset/thorax</socket_parent>
+              <!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+							<translation>0 0 0</translation>
+              <!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+							<orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+          </frames>
+        </WeldJoint>
+        <CustomJoint name="sc1_l">
+          <!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The parent frame for the joint.).-->
+					<socket_parent_frame>thorax_offset</socket_parent_frame>
+          <!--Path to a Component that satisfies the Socket 'child_frame' of type PhysicalFrame (description: The child frame for the joint.).-->
+					<socket_child_frame>clavicle_1_l_offset</socket_child_frame>
+          <!--List containing the generalized coordinates (q's) that parameterize this joint.-->
+					<coordinates>
+            <Coordinate name="SC_l_y">
+              <!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+							<default_value>0.58444078</default_value>
+              <!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+							<range>1.1345 0.3316</range>
+              <!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+							<clamped>false</clamped>
+              <!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+							<locked>false</locked>
+              <!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+							<prescribed>false</prescribed>
+            </Coordinate>
+          </coordinates>
+          <!--Physical offset frames owned by the Joint that are typically used to satisfy the owning Joint's parent and child frame connections (sockets). PhysicalOffsetFrames are often used to describe the fixed transformation from a Body's origin to another location of interest on the Body (e.g., the joint center). When the joint is deleted, so are the PhysicalOffsetFrame components in this list.-->
+					<frames>
+            <PhysicalOffsetFrame name="thorax_offset">
+              <!--The geometry used to display the axes of this Frame.-->
+							<FrameGeometry name="frame_geometry">
+                <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+								<socket_frame>..</socket_frame>
+                <!--Scale factors in X, Y, Z directions respectively.-->
+								<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+							<socket_parent>/bodyset/thorax</socket_parent>
+              <!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+							<translation>-0.0014 -0.0152 0.0028</translation>
+              <!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+							<orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+            <PhysicalOffsetFrame name="clavicle_1_l_offset">
+              <!--The geometry used to display the axes of this Frame.-->
+							<FrameGeometry name="frame_geometry">
+                <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+								<socket_frame>..</socket_frame>
+                <!--Scale factors in X, Y, Z directions respectively.-->
+								<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+							<socket_parent>/bodyset/clavicle_1_l</socket_parent>
+              <!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+							<translation>0 0 0</translation>
+              <!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+							<orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+          </frames>
+          <!--Defines how the child body moves with respect to the parent as a function of the generalized coordinates.-->
+					<SpatialTransform>
+            <!--3 Axes for rotations are listed first.-->
+						<TransformAxis name="rotation1">
+              <!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+							<coordinates>SC_l_y</coordinates>
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 1 0</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<LinearFunction name="function">
+                <coefficients> 1 0</coefficients>
+              </LinearFunction>
+            </TransformAxis>
+            <TransformAxis name="rotation2">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 0 1</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="rotation3">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>1 0 0</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <!--3 Axes for translations are listed next.-->
+						<TransformAxis name="translation1">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>1 0 0</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation2">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 1 0</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation3">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 0 1</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+          </SpatialTransform>
+        </CustomJoint>
+        <CustomJoint name="sc2_l">
+          <!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The parent frame for the joint.).-->
+					<socket_parent_frame>clavicle_1_l_offset</socket_parent_frame>
+          <!--Path to a Component that satisfies the Socket 'child_frame' of type PhysicalFrame (description: The child frame for the joint.).-->
+					<socket_child_frame>clavicle_2_l_offset</socket_child_frame>
+          <!--List containing the generalized coordinates (q's) that parameterize this joint.-->
+					<coordinates>
+            <Coordinate name="SC_l_z">
+              <!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+							<default_value>-0.0873</default_value>
+              <!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+							<range>-0.0873 -0.5236</range>
+              <!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+							<clamped>false</clamped>
+              <!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+							<locked>false</locked>
+              <!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+							<prescribed>false</prescribed>
+            </Coordinate>
+          </coordinates>
+          <!--Physical offset frames owned by the Joint that are typically used to satisfy the owning Joint's parent and child frame connections (sockets). PhysicalOffsetFrames are often used to describe the fixed transformation from a Body's origin to another location of interest on the Body (e.g., the joint center). When the joint is deleted, so are the PhysicalOffsetFrame components in this list.-->
+					<frames>
+            <PhysicalOffsetFrame name="clavicle_1_l_offset">
+              <!--The geometry used to display the axes of this Frame.-->
+							<FrameGeometry name="frame_geometry">
+                <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+								<socket_frame>..</socket_frame>
+                <!--Scale factors in X, Y, Z directions respectively.-->
+								<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+							<socket_parent>/bodyset/clavicle_1_l</socket_parent>
+              <!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+							<translation>0 0 0</translation>
+              <!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+							<orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+            <PhysicalOffsetFrame name="clavicle_2_l_offset">
+              <!--The geometry used to display the axes of this Frame.-->
+							<FrameGeometry name="frame_geometry">
+                <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+								<socket_frame>..</socket_frame>
+                <!--Scale factors in X, Y, Z directions respectively.-->
+								<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+							<socket_parent>/bodyset/clavicle_2_l</socket_parent>
+              <!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+							<translation>0 0 0</translation>
+              <!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+							<orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+          </frames>
+          <!--Defines how the child body moves with respect to the parent as a function of the generalized coordinates.-->
+					<SpatialTransform>
+            <!--3 Axes for rotations are listed first.-->
+						<TransformAxis name="rotation1">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 1 0</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="rotation2">
+              <!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+							<coordinates>SC_l_z</coordinates>
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 0 1</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<LinearFunction name="function">
+                <coefficients> 1 0</coefficients>
+              </LinearFunction>
+            </TransformAxis>
+            <TransformAxis name="rotation3">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>1 0 0</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <!--3 Axes for translations are listed next.-->
+						<TransformAxis name="translation1">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>1 0 0</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation2">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 1 0</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation3">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 0 1</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+          </SpatialTransform>
+        </CustomJoint>
+        <CustomJoint name="sc3_l">
+          <!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The parent frame for the joint.).-->
+					<socket_parent_frame>clavicle_2_l_offset</socket_parent_frame>
+          <!--Path to a Component that satisfies the Socket 'child_frame' of type PhysicalFrame (description: The child frame for the joint.).-->
+					<socket_child_frame>clavicle_l_offset</socket_child_frame>
+          <!--List containing the generalized coordinates (q's) that parameterize this joint.-->
+					<coordinates>
+            <Coordinate name="SC_l_x">
+              <!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+							<default_value>0.57446378</default_value>
+              <!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+							<range>0 1.4486000000000001</range>
+              <!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+							<clamped>false</clamped>
+              <!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+							<locked>false</locked>
+              <!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+							<prescribed>false</prescribed>
+            </Coordinate>
+          </coordinates>
+          <!--Physical offset frames owned by the Joint that are typically used to satisfy the owning Joint's parent and child frame connections (sockets). PhysicalOffsetFrames are often used to describe the fixed transformation from a Body's origin to another location of interest on the Body (e.g., the joint center). When the joint is deleted, so are the PhysicalOffsetFrame components in this list.-->
+					<frames>
+            <PhysicalOffsetFrame name="clavicle_2_l_offset">
+              <!--The geometry used to display the axes of this Frame.-->
+							<FrameGeometry name="frame_geometry">
+                <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+								<socket_frame>..</socket_frame>
+                <!--Scale factors in X, Y, Z directions respectively.-->
+								<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+							<socket_parent>/bodyset/clavicle_2_l</socket_parent>
+              <!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+							<translation>0 0 0</translation>
+              <!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+							<orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+            <PhysicalOffsetFrame name="clavicle_l_offset">
+              <!--The geometry used to display the axes of this Frame.-->
+							<FrameGeometry name="frame_geometry">
+                <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+								<socket_frame>..</socket_frame>
+                <!--Scale factors in X, Y, Z directions respectively.-->
+								<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+							<socket_parent>/bodyset/clavicle_l</socket_parent>
+              <!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+							<translation>0 0 0</translation>
+              <!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+							<orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+          </frames>
+          <!--Defines how the child body moves with respect to the parent as a function of the generalized coordinates.-->
+					<SpatialTransform>
+            <!--3 Axes for rotations are listed first.-->
+						<TransformAxis name="rotation1">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 1 0</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="rotation2">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 0 1</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="rotation3">
+              <!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+							<coordinates>SC_l_x</coordinates>
+              <!--Rotation or translation axis for the transform.-->
+							<axis>1 0 0</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<LinearFunction name="function">
+                <coefficients> 1 0</coefficients>
+              </LinearFunction>
+            </TransformAxis>
+            <!--3 Axes for translations are listed next.-->
+						<TransformAxis name="translation1">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>1 0 0</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation2">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 1 0</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation3">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 0 1</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+          </SpatialTransform>
+        </CustomJoint>
+        <CustomJoint name="ac1_l">
+          <!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The parent frame for the joint.).-->
+					<socket_parent_frame>clavicle_l_offset</socket_parent_frame>
+          <!--Path to a Component that satisfies the Socket 'child_frame' of type PhysicalFrame (description: The child frame for the joint.).-->
+					<socket_child_frame>scapula_1_l_offset</socket_child_frame>
+          <!--List containing the generalized coordinates (q's) that parameterize this joint.-->
+					<coordinates>
+            <Coordinate name="AC_l_y">
+              <!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+							<default_value>-0.7953626</default_value>
+              <!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+							<range>-0.576 -1.2043</range>
+              <!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+							<clamped>false</clamped>
+              <!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+							<locked>false</locked>
+              <!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+							<prescribed>false</prescribed>
+            </Coordinate>
+          </coordinates>
+          <!--Physical offset frames owned by the Joint that are typically used to satisfy the owning Joint's parent and child frame connections (sockets). PhysicalOffsetFrames are often used to describe the fixed transformation from a Body's origin to another location of interest on the Body (e.g., the joint center). When the joint is deleted, so are the PhysicalOffsetFrame components in this list.-->
+					<frames>
+            <PhysicalOffsetFrame name="clavicle_l_offset">
+              <!--The geometry used to display the axes of this Frame.-->
+							<FrameGeometry name="frame_geometry">
+                <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+								<socket_frame>..</socket_frame>
+                <!--Scale factors in X, Y, Z directions respectively.-->
+								<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+							<socket_parent>/bodyset/clavicle_l</socket_parent>
+              <!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+							<translation>-0.2077 -0.0001 0.0282</translation>
+              <!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+							<orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+            <PhysicalOffsetFrame name="scapula_1_l_offset">
+              <!--The geometry used to display the axes of this Frame.-->
+							<FrameGeometry name="frame_geometry">
+                <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+								<socket_frame>..</socket_frame>
+                <!--Scale factors in X, Y, Z directions respectively.-->
+								<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+							<socket_parent>/bodyset/scapula_1_l</socket_parent>
+              <!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+							<translation>0 0 0</translation>
+              <!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+							<orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+          </frames>
+          <!--Defines how the child body moves with respect to the parent as a function of the generalized coordinates.-->
+					<SpatialTransform>
+            <!--3 Axes for rotations are listed first.-->
+						<TransformAxis name="rotation1">
+              <!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+							<coordinates>AC_l_y</coordinates>
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 1 0</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<LinearFunction name="function">
+                <coefficients> 1 0</coefficients>
+              </LinearFunction>
+            </TransformAxis>
+            <TransformAxis name="rotation2">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 0 1</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="rotation3">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>1 0 0</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <!--3 Axes for translations are listed next.-->
+						<TransformAxis name="translation1">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>1 0 0</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation2">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 1 0</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation3">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 0 1</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+          </SpatialTransform>
+        </CustomJoint>
+        <CustomJoint name="ac2_l">
+          <!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The parent frame for the joint.).-->
+					<socket_parent_frame>scapula_1_l_offset</socket_parent_frame>
+          <!--Path to a Component that satisfies the Socket 'child_frame' of type PhysicalFrame (description: The child frame for the joint.).-->
+					<socket_child_frame>scapula_2_l_offset</socket_child_frame>
+          <!--List containing the generalized coordinates (q's) that parameterize this joint.-->
+					<coordinates>
+            <Coordinate name="AC_l_z">
+              <!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+							<default_value>-0.00799797</default_value>
+              <!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+							<range>0.3819 -0.3491</range>
+              <!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+							<clamped>false</clamped>
+              <!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+							<locked>false</locked>
+              <!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+							<prescribed>false</prescribed>
+            </Coordinate>
+          </coordinates>
+          <!--Physical offset frames owned by the Joint that are typically used to satisfy the owning Joint's parent and child frame connections (sockets). PhysicalOffsetFrames are often used to describe the fixed transformation from a Body's origin to another location of interest on the Body (e.g., the joint center). When the joint is deleted, so are the PhysicalOffsetFrame components in this list.-->
+					<frames>
+            <PhysicalOffsetFrame name="scapula_1_l_offset">
+              <!--The geometry used to display the axes of this Frame.-->
+							<FrameGeometry name="frame_geometry">
+                <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+								<socket_frame>..</socket_frame>
+                <!--Scale factors in X, Y, Z directions respectively.-->
+								<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+							<socket_parent>/bodyset/scapula_1_l</socket_parent>
+              <!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+							<translation>0 0 0</translation>
+              <!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+							<orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+            <PhysicalOffsetFrame name="scapula_2_l_offset">
+              <!--The geometry used to display the axes of this Frame.-->
+							<FrameGeometry name="frame_geometry">
+                <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+								<socket_frame>..</socket_frame>
+                <!--Scale factors in X, Y, Z directions respectively.-->
+								<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+							<socket_parent>/bodyset/scapula_2_l</socket_parent>
+              <!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+							<translation>0 0 0</translation>
+              <!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+							<orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+          </frames>
+          <!--Defines how the child body moves with respect to the parent as a function of the generalized coordinates.-->
+					<SpatialTransform>
+            <!--3 Axes for rotations are listed first.-->
+						<TransformAxis name="rotation1">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 1 0</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="rotation2">
+              <!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+							<coordinates>AC_l_z</coordinates>
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 0 1</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<LinearFunction name="function">
+                <coefficients> 1 0</coefficients>
+              </LinearFunction>
+            </TransformAxis>
+            <TransformAxis name="rotation3">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>1 0 0</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <!--3 Axes for translations are listed next.-->
+						<TransformAxis name="translation1">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>1 0 0</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation2">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 1 0</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation3">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 0 1</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+          </SpatialTransform>
+        </CustomJoint>
+        <CustomJoint name="ac3_l">
+          <!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The parent frame for the joint.).-->
+					<socket_parent_frame>scapula_2_l_offset</socket_parent_frame>
+          <!--Path to a Component that satisfies the Socket 'child_frame' of type PhysicalFrame (description: The child frame for the joint.).-->
+					<socket_child_frame>scapula_l_offset</socket_child_frame>
+          <!--List containing the generalized coordinates (q's) that parameterize this joint.-->
+					<coordinates>
+            <Coordinate name="AC_l_x">
+              <!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+							<default_value>-0.21051655</default_value>
+              <!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+							<range>-0.29670000000000002 0.31419999999999998</range>
+              <!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+							<clamped>false</clamped>
+              <!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+							<locked>false</locked>
+              <!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+							<prescribed>false</prescribed>
+            </Coordinate>
+          </coordinates>
+          <!--Physical offset frames owned by the Joint that are typically used to satisfy the owning Joint's parent and child frame connections (sockets). PhysicalOffsetFrames are often used to describe the fixed transformation from a Body's origin to another location of interest on the Body (e.g., the joint center). When the joint is deleted, so are the PhysicalOffsetFrame components in this list.-->
+					<frames>
+            <PhysicalOffsetFrame name="scapula_2_l_offset">
+              <!--The geometry used to display the axes of this Frame.-->
+							<FrameGeometry name="frame_geometry">
+                <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+								<socket_frame>..</socket_frame>
+                <!--Scale factors in X, Y, Z directions respectively.-->
+								<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+							<socket_parent>/bodyset/scapula_2_l</socket_parent>
+              <!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+							<translation>0 0 0</translation>
+              <!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+							<orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+            <PhysicalOffsetFrame name="scapula_l_offset">
+              <!--The geometry used to display the axes of this Frame.-->
+							<FrameGeometry name="frame_geometry">
+                <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+								<socket_frame>..</socket_frame>
+                <!--Scale factors in X, Y, Z directions respectively.-->
+								<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+							<socket_parent>/bodyset/scapula_l</socket_parent>
+              <!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+							<translation>0 0 0</translation>
+              <!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+							<orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+          </frames>
+          <!--Defines how the child body moves with respect to the parent as a function of the generalized coordinates.-->
+					<SpatialTransform>
+            <!--3 Axes for rotations are listed first.-->
+						<TransformAxis name="rotation1">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 1 0</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="rotation2">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 0 1</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="rotation3">
+              <!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+							<coordinates>AC_l_x</coordinates>
+              <!--Rotation or translation axis for the transform.-->
+							<axis>1 0 0</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<LinearFunction name="function">
+                <coefficients> 1 0</coefficients>
+              </LinearFunction>
+            </TransformAxis>
+            <!--3 Axes for translations are listed next.-->
+						<TransformAxis name="translation1">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>1 0 0</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation2">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 1 0</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation3">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 0 1</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+          </SpatialTransform>
+        </CustomJoint>
+        <CustomJoint name="gh1_l">
+          <!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The parent frame for the joint.).-->
+					<socket_parent_frame>scapula_l_offset</socket_parent_frame>
+          <!--Path to a Component that satisfies the Socket 'child_frame' of type PhysicalFrame (description: The child frame for the joint.).-->
+					<socket_child_frame>humerus_1_l_offset</socket_child_frame>
+          <!--List containing the generalized coordinates (q's) that parameterize this joint.-->
+					<coordinates>
+            <Coordinate name="GH_l_y">
+              <!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+							<default_value>0.76557750628</default_value>
+              <!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+							<range>-2.9670999999999998 3.0543</range>
+              <!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+							<clamped>false</clamped>
+              <!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+							<locked>false</locked>
+              <!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+							<prescribed>false</prescribed>
+            </Coordinate>
+          </coordinates>
+          <!--Physical offset frames owned by the Joint that are typically used to satisfy the owning Joint's parent and child frame connections (sockets). PhysicalOffsetFrames are often used to describe the fixed transformation from a Body's origin to another location of interest on the Body (e.g., the joint center). When the joint is deleted, so are the PhysicalOffsetFrame components in this list.-->
+					<frames>
+            <PhysicalOffsetFrame name="scapula_l_offset">
+              <!--The geometry used to display the axes of this Frame.-->
+							<FrameGeometry name="frame_geometry">
+                <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+								<socket_frame>..</socket_frame>
+                <!--Scale factors in X, Y, Z directions respectively.-->
+								<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+							<socket_parent>/bodyset/scapula_l</socket_parent>
+              <!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+							<translation>-0.002 -0.023 -0.0439</translation>
+              <!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+							<orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+            <PhysicalOffsetFrame name="humerus_1_l_offset">
+              <!--The geometry used to display the axes of this Frame.-->
+							<FrameGeometry name="frame_geometry">
+                <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+								<socket_frame>..</socket_frame>
+                <!--Scale factors in X, Y, Z directions respectively.-->
+								<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+							<socket_parent>/bodyset/humerus_1_l</socket_parent>
+              <!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+							<translation>0 0 0</translation>
+              <!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+							<orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+          </frames>
+          <!--Defines how the child body moves with respect to the parent as a function of the generalized coordinates.-->
+					<SpatialTransform>
+            <!--3 Axes for rotations are listed first.-->
+						<TransformAxis name="rotation1">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>1 0 0</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="rotation2">
+              <!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+							<coordinates>GH_l_y</coordinates>
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 1 0</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<LinearFunction name="function">
+                <coefficients> 1 0</coefficients>
+              </LinearFunction>
+            </TransformAxis>
+            <TransformAxis name="rotation3">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 0 1</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <!--3 Axes for translations are listed next.-->
+						<TransformAxis name="translation1">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>1 0 0</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation2">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 1 0</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation3">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 0 1</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+          </SpatialTransform>
+        </CustomJoint>
+        <CustomJoint name="gh2_l">
+          <!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The parent frame for the joint.).-->
+					<socket_parent_frame>humerus_1_l_offset</socket_parent_frame>
+          <!--Path to a Component that satisfies the Socket 'child_frame' of type PhysicalFrame (description: The child frame for the joint.).-->
+					<socket_child_frame>humerus_2_l_offset</socket_child_frame>
+          <!--List containing the generalized coordinates (q's) that parameterize this joint.-->
+					<coordinates>
+            <Coordinate name="GH_l_z">
+              <!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+							<default_value>0.00379958</default_value>
+              <!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+							<range>0.5236 -1.4661</range>
+              <!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+							<clamped>false</clamped>
+              <!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+							<locked>false</locked>
+              <!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+							<prescribed>false</prescribed>
+            </Coordinate>
+          </coordinates>
+          <!--Physical offset frames owned by the Joint that are typically used to satisfy the owning Joint's parent and child frame connections (sockets). PhysicalOffsetFrames are often used to describe the fixed transformation from a Body's origin to another location of interest on the Body (e.g., the joint center). When the joint is deleted, so are the PhysicalOffsetFrame components in this list.-->
+					<frames>
+            <PhysicalOffsetFrame name="humerus_1_l_offset">
+              <!--The geometry used to display the axes of this Frame.-->
+							<FrameGeometry name="frame_geometry">
+                <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+								<socket_frame>..</socket_frame>
+                <!--Scale factors in X, Y, Z directions respectively.-->
+								<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+							<socket_parent>/bodyset/humerus_1_l</socket_parent>
+              <!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+							<translation>0 0 0</translation>
+              <!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+							<orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+            <PhysicalOffsetFrame name="humerus_2_l_offset">
+              <!--The geometry used to display the axes of this Frame.-->
+							<FrameGeometry name="frame_geometry">
+                <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+								<socket_frame>..</socket_frame>
+                <!--Scale factors in X, Y, Z directions respectively.-->
+								<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+							<socket_parent>/bodyset/humerus_2_l</socket_parent>
+              <!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+							<translation>0 0 0</translation>
+              <!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+							<orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+          </frames>
+          <!--Defines how the child body moves with respect to the parent as a function of the generalized coordinates.-->
+					<SpatialTransform>
+            <!--3 Axes for rotations are listed first.-->
+						<TransformAxis name="rotation1">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>1 0 0</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="rotation2">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 1 0</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="rotation3">
+              <!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+							<coordinates>GH_l_z</coordinates>
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 0 1</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<LinearFunction name="function">
+                <coefficients> 1 0</coefficients>
+              </LinearFunction>
+            </TransformAxis>
+            <!--3 Axes for translations are listed next.-->
+						<TransformAxis name="translation1">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>1 0 0</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation2">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 1 0</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation3">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 0 1</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+          </SpatialTransform>
+        </CustomJoint>
+        <CustomJoint name="gh3_l">
+          <!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The parent frame for the joint.).-->
+					<socket_parent_frame>humerus_2_l_offset</socket_parent_frame>
+          <!--Path to a Component that satisfies the Socket 'child_frame' of type PhysicalFrame (description: The child frame for the joint.).-->
+					<socket_child_frame>humerus_l_offset</socket_child_frame>
+          <!--List containing the generalized coordinates (q's) that parameterize this joint.-->
+					<coordinates>
+            <Coordinate name="GH_l_yy">
+              <!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+							<default_value>-0.60490773</default_value>
+              <!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+							<range>-3.0891999999999999 3.1240999999999999</range>
+              <!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+							<clamped>false</clamped>
+              <!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+							<locked>false</locked>
+              <!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+							<prescribed>false</prescribed>
+            </Coordinate>
+          </coordinates>
+          <!--Physical offset frames owned by the Joint that are typically used to satisfy the owning Joint's parent and child frame connections (sockets). PhysicalOffsetFrames are often used to describe the fixed transformation from a Body's origin to another location of interest on the Body (e.g., the joint center). When the joint is deleted, so are the PhysicalOffsetFrame components in this list.-->
+					<frames>
+            <PhysicalOffsetFrame name="humerus_2_l_offset">
+              <!--The geometry used to display the axes of this Frame.-->
+							<FrameGeometry name="frame_geometry">
+                <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+								<socket_frame>..</socket_frame>
+                <!--Scale factors in X, Y, Z directions respectively.-->
+								<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+							<socket_parent>/bodyset/humerus_2_l</socket_parent>
+              <!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+							<translation>0 0 0</translation>
+              <!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+							<orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+            <PhysicalOffsetFrame name="humerus_l_offset">
+              <!--The geometry used to display the axes of this Frame.-->
+							<FrameGeometry name="frame_geometry">
+                <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+								<socket_frame>..</socket_frame>
+                <!--Scale factors in X, Y, Z directions respectively.-->
+								<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+							<socket_parent>/bodyset/humerus_l</socket_parent>
+              <!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+							<translation>0 0 0</translation>
+              <!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+							<orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+          </frames>
+          <!--Defines how the child body moves with respect to the parent as a function of the generalized coordinates.-->
+					<SpatialTransform>
+            <!--3 Axes for rotations are listed first.-->
+						<TransformAxis name="rotation1">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>1 0 0</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="rotation2">
+              <!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+							<coordinates>GH_l_yy</coordinates>
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 1 0</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<LinearFunction name="function">
+                <coefficients> 1 0</coefficients>
+              </LinearFunction>
+            </TransformAxis>
+            <TransformAxis name="rotation3">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 0 1</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <!--3 Axes for translations are listed next.-->
+						<TransformAxis name="translation1">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>1 0 0</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation2">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 1 0</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation3">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 0 1</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+          </SpatialTransform>
+        </CustomJoint>
+        <CustomJoint name="hu_l">
+          <!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The parent frame for the joint.).-->
+					<socket_parent_frame>humerus_l_offset</socket_parent_frame>
+          <!--Path to a Component that satisfies the Socket 'child_frame' of type PhysicalFrame (description: The child frame for the joint.).-->
+					<socket_child_frame>ulna_l_offset</socket_child_frame>
+          <!--List containing the generalized coordinates (q's) that parameterize this joint.-->
+					<coordinates>
+            <Coordinate name="EL_l_x">
+              <!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+							<default_value>0.08726646</default_value>
+              <!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+							<range>0.087266460000000004 2.44346095</range>
+              <!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+							<clamped>false</clamped>
+              <!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+							<locked>false</locked>
+              <!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+							<prescribed>false</prescribed>
+            </Coordinate>
+          </coordinates>
+          <!--Physical offset frames owned by the Joint that are typically used to satisfy the owning Joint's parent and child frame connections (sockets). PhysicalOffsetFrames are often used to describe the fixed transformation from a Body's origin to another location of interest on the Body (e.g., the joint center). When the joint is deleted, so are the PhysicalOffsetFrame components in this list.-->
+					<frames>
+            <PhysicalOffsetFrame name="humerus_l_offset">
+              <!--The geometry used to display the axes of this Frame.-->
+							<FrameGeometry name="frame_geometry">
+                <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+								<socket_frame>..</socket_frame>
+                <!--Scale factors in X, Y, Z directions respectively.-->
+								<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+							<socket_parent>/bodyset/humerus_l</socket_parent>
+              <!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+							<translation>-0.0058 -0.2907 -0.0049</translation>
+              <!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+							<orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+            <PhysicalOffsetFrame name="ulna_l_offset">
+              <!--The geometry used to display the axes of this Frame.-->
+							<FrameGeometry name="frame_geometry">
+                <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+								<socket_frame>..</socket_frame>
+                <!--Scale factors in X, Y, Z directions respectively.-->
+								<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+							<socket_parent>/bodyset/ulna_l</socket_parent>
+              <!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+							<translation>0 0 0</translation>
+              <!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+							<orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+          </frames>
+          <!--Defines how the child body moves with respect to the parent as a function of the generalized coordinates.-->
+					<SpatialTransform>
+            <!--3 Axes for rotations are listed first.-->
+						<TransformAxis name="rotation1">
+              <!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+							<coordinates>EL_l_x</coordinates>
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0.99976611999999998 0.0084460000000000004 -0.019909</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<LinearFunction name="function">
+                <coefficients> 1 0</coefficients>
+              </LinearFunction>
+            </TransformAxis>
+            <TransformAxis name="rotation2">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 1 0</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="rotation3">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 0 1</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <!--3 Axes for translations are listed next.-->
+						<TransformAxis name="translation1">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>1 0 0</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation2">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 1 0</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation3">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 0 1</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+          </SpatialTransform>
+        </CustomJoint>
+        <CustomJoint name="ur_l">
+          <!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The parent frame for the joint.).-->
+					<socket_parent_frame>ulna_l_offset</socket_parent_frame>
+          <!--Path to a Component that satisfies the Socket 'child_frame' of type PhysicalFrame (description: The child frame for the joint.).-->
+					<socket_child_frame>radius_l_offset</socket_child_frame>
+          <!--List containing the generalized coordinates (q's) that parameterize this joint.-->
+					<coordinates>
+            <Coordinate name="PS_l_y">
+              <!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+							<default_value>0.08726646</default_value>
+              <!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+							<range>0.087266460000000004 2.7925268000000001</range>
+              <!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+							<clamped>false</clamped>
+              <!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+							<locked>false</locked>
+              <!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+							<prescribed>false</prescribed>
+            </Coordinate>
+          </coordinates>
+          <!--Physical offset frames owned by the Joint that are typically used to satisfy the owning Joint's parent and child frame connections (sockets). PhysicalOffsetFrames are often used to describe the fixed transformation from a Body's origin to another location of interest on the Body (e.g., the joint center). When the joint is deleted, so are the PhysicalOffsetFrame components in this list.-->
+					<frames>
+            <PhysicalOffsetFrame name="ulna_l_offset">
+              <!--The geometry used to display the axes of this Frame.-->
+							<FrameGeometry name="frame_geometry">
+                <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+								<socket_frame>..</socket_frame>
+                <!--Scale factors in X, Y, Z directions respectively.-->
+								<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+							<socket_parent>/bodyset/ulna_l</socket_parent>
+              <!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+							<translation>-0.0171 -0.0133 -0.0163</translation>
+              <!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+							<orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+            <PhysicalOffsetFrame name="radius_l_offset">
+              <!--The geometry used to display the axes of this Frame.-->
+							<FrameGeometry name="frame_geometry">
+                <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+								<socket_frame>..</socket_frame>
+                <!--Scale factors in X, Y, Z directions respectively.-->
+								<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+							<socket_parent>/bodyset/radius_l</socket_parent>
+              <!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+							<translation>0 0 0</translation>
+              <!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+							<orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+          </frames>
+          <!--Defines how the child body moves with respect to the parent as a function of the generalized coordinates.-->
+					<SpatialTransform>
+            <!--3 Axes for rotations are listed first.-->
+						<TransformAxis name="rotation1">
+              <!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+							<coordinates>PS_l_y</coordinates>
+              <!--Rotation or translation axis for the transform.-->
+							<axis>-0.11329498 0.97405881999999999 0.19589196</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<LinearFunction name="function">
+                <coefficients> 1 0</coefficients>
+              </LinearFunction>
+            </TransformAxis>
+            <TransformAxis name="rotation2">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 0 1</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="rotation3">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>1 0 0</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <!--3 Axes for translations are listed next.-->
+						<TransformAxis name="translation1">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>1 0 0</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation2">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 1 0</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+            <TransformAxis name="translation3">
+              <!--Rotation or translation axis for the transform.-->
+							<axis>0 0 1</axis>
+              <!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
+							<Constant name="function">
+                <value>0</value>
+              </Constant>
+            </TransformAxis>
+          </SpatialTransform>
+        </CustomJoint>
+      <WeldJoint name="rc_l">
+          <!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The parent frame for the joint.).-->
+					<socket_parent_frame>radius_l_offset</socket_parent_frame>
+          <!--Path to a Component that satisfies the Socket 'child_frame' of type PhysicalFrame (description: The child frame for the joint.).-->
+					<socket_child_frame>hand_l_offset</socket_child_frame>
+          <!--Physical offset frames owned by the Joint that are typically used to satisfy the owning Joint's parent and child frame connections (sockets). PhysicalOffsetFrames are often used to describe the fixed transformation from a Body's origin to another location of interest on the Body (e.g., the joint center). When the joint is deleted, so are the PhysicalOffsetFrame components in this list.-->
+					<frames>
+            <PhysicalOffsetFrame name="radius_l_offset">
+              <!--The geometry used to display the axes of this Frame.-->
+							<FrameGeometry name="frame_geometry">
+                <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+								<socket_frame>..</socket_frame>
+                <!--Scale factors in X, Y, Z directions respectively.-->
+								<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+							<socket_parent>/bodyset/radius_l</socket_parent>
+              <!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+							<translation>-0.0169 -0.2251 -0.0712</translation>
+              <!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+							<orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+            <PhysicalOffsetFrame name="hand_l_offset">
+              <!--The geometry used to display the axes of this Frame.-->
+							<FrameGeometry name="frame_geometry">
+                <!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+								<socket_frame>..</socket_frame>
+                <!--Scale factors in X, Y, Z directions respectively.-->
+								<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+              </FrameGeometry>
+              <!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+							<socket_parent>/bodyset/hand_l</socket_parent>
+              <!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+							<translation>0 0 0</translation>
+              <!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+							<orientation>0 0 0</orientation>
+            </PhysicalOffsetFrame>
+          </frames>
+        </WeldJoint>
+        </objects>
+    </JointSet>
+    <!--Controllers that provide the control inputs for Actuators.-->
+		<ControllerSet name="controllerset">
+      <objects/>
+      <groups/>
+    </ControllerSet>
+    <!--Constraints in the model.-->
+		<ConstraintSet name="constraintset">
+      <objects/>
+    </ConstraintSet>
+    <!--Forces in the model (includes Actuators).-->
+		<ForceSet name="forceset">
+      <objects/>
+      <groups/>
+    </ForceSet>
+    <!--Markers in the model.-->
+		<MarkerSet name="markerset">
+      <objects/>
+    </MarkerSet>
+    <!--Probes in the model.-->
+		<ProbeSet name="probeset">
+      <objects/>
+    </ProbeSet>
+  </Model>
+</OpenSimDocument>
