@@ -29,10 +29,12 @@ set(BUILD_SHARED_LIBS "TRUE" CACHE BOOL "Build shared libraries." FORCE)
 # Configure this project.
 # -----------------------
 set(MY_LIBRARY_SOURCES
+    lib/Knife.cpp
     lib/Utils.cpp
 )
 
 set(MY_LIBRARY_HEADERS
+    lib/Knife.h
     lib/Utils.h
 )
 
