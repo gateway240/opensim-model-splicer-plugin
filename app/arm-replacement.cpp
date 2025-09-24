@@ -10,7 +10,7 @@ int main() {
   // Setup paths and names
   const fs::path modelsDir = fs::path(".");
   const fs::path outputDir = fs::path("..") / "output";
-  const std::string baseModelName = "gait2392_thelen2003muscle";
+  const std::string baseModelName = "gait2392_thelen2003muscle_Lerner_knee";
   const std::string armModelRightName = "das3_v40600_right_rename";
   const std::string armModelLeftName = "das3_v40600_left_mirror_rename";
   const std::string suffix = "das_arm";

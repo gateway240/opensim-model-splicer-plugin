@@ -81,6 +81,6 @@ foreach( testsourcefile ${APP_SOURCES} )
     add_executable( ${testname} ${testsourcefile} )
     # Make sure YourLib is linked to each app
     target_link_libraries( ${testname} ${PLUGIN_NAME})
-    # 5. Ensure each executable depends on the symlink_data target
+    # Ensure each executable depends on the symlink_data target
     add_dependencies(${testname} symlink_data)
 endforeach( testsourcefile ${APP_SOURCES} )
