@@ -4,6 +4,7 @@
 #include <OpenSim/Simulation/Model/ConstraintSet.h>
 #include <OpenSim/Simulation/Model/JointSet.h>
 #include <OpenSim/Simulation/Model/Model.h>
+#include <Simulation/Model/ForceSet.h>
 #include <iostream>
 
 void removeBodyByName(OpenSim::Model &model, const std::string &bodyName) {
@@ -41,6 +42,20 @@ void addBodiesFromModel(OpenSim::Model &targetModel,
     targetBodySet.adoptAndAppend(newBody);
   }
 }
+
+void addForcesFromModel(OpenSim::Model &targetModel,
+                        const OpenSim::Model &sourceModel) {
+  auto &targetSet = targetModel.updForceSet();
+  const auto &sourceSet = sourceModel.getForceSet();
+
+  for (int i = 0; i < sourceSet.getSize(); ++i) {
+    const auto &val = sourceSet.get(i);
+    auto *newVal = val.clone();
+    std::cout << "Adding Set: " << newVal->getName() << std::endl;
+    targetSet.adoptAndAppend(newVal);
+  }
+}
+
 
 void insertJointsFromModel(OpenSim::Model &targetModel,
                            const OpenSim::Model &sourceModel,
