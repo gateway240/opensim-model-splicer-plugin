@@ -56,6 +56,8 @@ int main() {
     addForcesFromModel(baseModel, legModel, "ankleLimit_r");
     addContactGeometryFromModel(baseModel, legModel,"r_pros_heel");
     addContactGeometryFromModel(baseModel, legModel,"r_pros_toe");
+    addContactForceForGeometry(baseModel,"r_pros_heel");
+    addContactForceForGeometry(baseModel,"r_pros_toe");
 
     baseModel.finalizeConnections();
 

@@ -24,6 +24,9 @@ void addForcesFromModel(OpenSim::Model &targetModel,
 void addContactGeometryFromModel(OpenSim::Model &targetModel,
                                  const OpenSim::Model &sourceModel,
                                  const std::string &name = "");
+void addContactForceForGeometry(OpenSim::Model &model,
+                                const std::string &name = "");
+
 void addConstraintsFromModel(OpenSim::Model &targetModel,
                              const OpenSim::Model &sourceModel);
 

@@ -5,6 +5,7 @@
 #include <OpenSim/Simulation/Model/JointSet.h>
 #include <OpenSim/Simulation/Model/Model.h>
 #include <Simulation/Model/ForceSet.h>
+#include <Simulation/Model/SmoothSphereHalfSpaceForce.h>
 #include <iostream>
 
 void removeBodyByName(OpenSim::Model &model, const std::string &bodyName) {
@@ -107,10 +108,33 @@ void addContactGeometryFromModel(OpenSim::Model &targetModel,
     const auto &source = sourceSet.get(i);
     auto *newObj = source.clone();
     if (name == "" || name == newObj->getName()) {
-      std::cout << "Adding Contact Geometry: " << newObj->getName() << std::endl;
+      std::cout << "Adding Contact Geometry: " << newObj->getName()
+                << std::endl;
+
       targetSet.adoptAndAppend(newObj);
     }
   }
+}
+void addContactForceForGeometry(OpenSim::Model &model,
+                                const std::string &name) {
+  auto &forceSet = model.updForceSet();
+  const auto &contactSpheres = model.getContactGeometrySet();
+  const auto &sphere = contactSpheres.get(contactSpheres.getIndex(name));
+  const auto &ground = contactSpheres.get(contactSpheres.getIndex("floor"));
+  auto *forceSphere = new OpenSim::SmoothSphereHalfSpaceForce();
+  forceSphere->setName("SmoothSphereHalfSpaceForce_" + sphere.getName());
+  forceSphere->connectSocket_half_space(ground);
+  forceSphere->connectSocket_sphere(sphere);
+
+  // Set defaults from PredSim
+  forceSphere->set_stiffness(1000000);
+  forceSphere->set_dissipation(2.0);
+  forceSphere->set_static_friction(0.8);
+  forceSphere->set_dynamic_friction(0.8);
+  forceSphere->set_viscous_friction(0.5);
+  forceSphere->set_transition_velocity(0.2);
+  std::cout << "Adding Contact Force: " << forceSphere->getName() << std::endl;
+  forceSet.adoptAndAppend(forceSphere);
 }
 void addConstraintsFromModel(OpenSim::Model &targetModel,
                              const OpenSim::Model &sourceModel) {
