@@ -9184,7 +9184,7 @@
 					<!--Value of activation in the default state (default: 0.5).-->
 					<default_activation>0</default_activation>
 				</ActivationCoordinateActuator>
-				<SpringGeneralizedForce name="ankleSpring">
+				<SpringGeneralizedForce name="ankleSpring_r">
 					<!--Name of the coordinate to which this force is applied.-->
 					<coordinate>ankle_angle_r</coordinate>
 					<!--Spring stiffness.-->
@@ -9194,7 +9194,25 @@
 					<!--Damping constant.-->
 					<viscosity>1</viscosity>
 				</SpringGeneralizedForce>
-				<SmoothSphereHalfSpaceForce name="SmoothSphereHalfSpaceForce_r_pros_heel">
+				<CoordinateLimitForce name="AnkleLimit_r">
+					<!--Flag indicating whether the force is applied or not. If true the forceis applied to the MultibodySystem otherwise the force is not applied.NOTE: Prior to OpenSim 4.0, this behavior was controlled by the 'isDisabled' property, where 'true' meant that force was not being applied. Thus, if 'isDisabled' is true, then 'appliesForce` is false.-->
+					<appliesForce>true</appliesForce>
+					<!--Coordinate (name) to be limited.-->
+					<coordinate>ankle_angle_r</coordinate>
+					<!--Stiffness of the passive limit force when coordinate exceeds upper limit. Note, rotational stiffness expected in N*m/degree.-->
+					<upper_stiffness>20</upper_stiffness>
+					<!--The upper limit of the coordinate range of motion (rotations in degrees).-->
+					<upper_limit>20</upper_limit>
+					<!--Stiffness of the passive limit force when coordinate exceeds lower limit. Note, rotational stiffness expected in N*m/degree.-->
+					<lower_stiffness>20</lower_stiffness>
+					<!--The lower limit of the coordinate range of motion (rotations in degrees).-->
+					<lower_limit>-40</lower_limit>
+					<!--Damping factor on the coordinate's speed applied only when limit is exceeded. For translational has units N/(m/s) and rotational has Nm/(degree/s)-->
+					<damping>0.25</damping>
+					<!--Transition region width in the units of the coordinate (rotations in degrees). Dictates the transition from zero to constant stiffness as coordinate exceeds its limit.-->
+					<transition>10</transition>
+				</CoordinateLimitForce>
+				<SmoothSphereHalfSpaceForce name="SmoothSphereHalfSpaceForce_r_pros_heel_r">
 					<!--Path to a Component that satisfies the Socket 'sphere' of type ContactSphere (description: The sphere participating in this contact.).-->
 					<socket_sphere>/contactgeometryset/r_pros_heel</socket_sphere>
 					<!--Path to a Component that satisfies the Socket 'half_space' of type ContactHalfSpace (description: The half-space participating in this contact.).-->
@@ -9212,7 +9230,7 @@
 					<!--The transition velocity, default is 0.01 (m/s).-->
 					<transition_velocity>0.20000000000000001</transition_velocity>
 				</SmoothSphereHalfSpaceForce>
-				<SmoothSphereHalfSpaceForce name="SmoothSphereHalfSpaceForce_r_pros_toe">
+				<SmoothSphereHalfSpaceForce name="SmoothSphereHalfSpaceForce_r_pros_toe_r">
 					<!--Path to a Component that satisfies the Socket 'sphere' of type ContactSphere (description: The sphere participating in this contact.).-->
 					<socket_sphere>/contactgeometryset/r_pros_toe</socket_sphere>
 					<!--Path to a Component that satisfies the Socket 'half_space' of type ContactHalfSpace (description: The half-space participating in this contact.).-->

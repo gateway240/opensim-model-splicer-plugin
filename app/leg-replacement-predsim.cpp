@@ -53,7 +53,7 @@ int main() {
     insertJointsFromModel(baseModel, legModel, "knee_r", "ankle_r");
     // addForcesFromModel(baseModel, legModel, "pros_foot_r");
     addForcesFromModel(baseModel, legModel, "ankleSpring");
-    addForcesFromModel(baseModel, legModel, "ankleLimit_r");
+    addForcesFromModel(baseModel, legModel, "AnkleLimit_r");
     addContactGeometryFromModel(baseModel, legModel,"r_pros_heel");
     addContactGeometryFromModel(baseModel, legModel,"r_pros_toe");
     addContactForceForGeometry(baseModel,"r_pros_heel");
@@ -64,7 +64,7 @@ int main() {
     // Save the new model
     fs::path outputFilePath = outputDir / (newModelName + "." + extOsim);
     baseModel.print(outputFilePath.string());
-    std::cout << "Arm replacement finished! Saved to " << outputFilePath
+    std::cout << "Replacement finished! Saved to " << outputFilePath
               << std::endl;
 
   } catch (const OpenSim::Exception &e) {

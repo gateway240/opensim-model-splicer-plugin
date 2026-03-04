@@ -67,7 +67,10 @@ void addForcesFromModel(OpenSim::Model &targetModel,
   for (int i = 0; i < sourceSet.getSize(); ++i) {
     const auto &val = sourceSet.get(i);
     auto *newVal = val.clone();
-    if (forceName == "" || forceName == newVal->getName()) {
+    if (!newVal->getName().ends_with("_r")) {
+      newVal->setName(newVal->getName() + "_r");
+    }
+    if (forceName == "" || forceName == val.getName()) {
       std::cout << "Adding Set: " << newVal->getName() << std::endl;
       targetSet.adoptAndAppend(newVal);
     }
@@ -122,7 +125,7 @@ void addContactForceForGeometry(OpenSim::Model &model,
   const auto &sphere = contactSpheres.get(contactSpheres.getIndex(name));
   const auto &ground = contactSpheres.get(contactSpheres.getIndex("floor"));
   auto *forceSphere = new OpenSim::SmoothSphereHalfSpaceForce();
-  forceSphere->setName("SmoothSphereHalfSpaceForce_" + sphere.getName());
+  forceSphere->setName("SmoothSphereHalfSpaceForce_" + sphere.getName() + "_r");
   forceSphere->connectSocket_half_space(ground);
   forceSphere->connectSocket_sphere(sphere);
 
