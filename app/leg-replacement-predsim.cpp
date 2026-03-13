@@ -54,10 +54,14 @@ int main() {
     // addForcesFromModel(baseModel, legModel, "pros_foot_r");
     addForcesFromModel(baseModel, legModel, "ankleSpring");
     addForcesFromModel(baseModel, legModel, "AnkleLimit_r");
-    addContactGeometryFromModel(baseModel, legModel,"r_pros_heel");
-    addContactGeometryFromModel(baseModel, legModel,"r_pros_toe");
-    addContactForceForGeometry(baseModel,"r_pros_heel");
-    addContactForceForGeometry(baseModel,"r_pros_toe");
+    addContactGeometryFromModel(baseModel, legModel, "r_pros_heel_1");
+    addContactGeometryFromModel(baseModel, legModel, "r_pros_heel_2");
+    addContactGeometryFromModel(baseModel, legModel, "r_pros_toe_1");
+    addContactGeometryFromModel(baseModel, legModel, "r_pros_toe_2");
+    addContactForceForGeometry(baseModel, "r_pros_heel_1");
+    addContactForceForGeometry(baseModel, "r_pros_heel_2");
+    addContactForceForGeometry(baseModel, "r_pros_toe_1");
+    addContactForceForGeometry(baseModel, "r_pros_toe_2");
 
     baseModel.finalizeConnections();
 

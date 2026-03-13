@@ -9212,9 +9212,9 @@
 					<!--Transition region width in the units of the coordinate (rotations in degrees). Dictates the transition from zero to constant stiffness as coordinate exceeds its limit.-->
 					<transition>10</transition>
 				</CoordinateLimitForce>
-				<SmoothSphereHalfSpaceForce name="SmoothSphereHalfSpaceForce_r_pros_heel_r">
+				<SmoothSphereHalfSpaceForce name="SmoothSphereHalfSpaceForce_r_pros_heel_1_r">
 					<!--Path to a Component that satisfies the Socket 'sphere' of type ContactSphere (description: The sphere participating in this contact.).-->
-					<socket_sphere>/contactgeometryset/r_pros_heel</socket_sphere>
+					<socket_sphere>/contactgeometryset/r_pros_heel_1</socket_sphere>
 					<!--Path to a Component that satisfies the Socket 'half_space' of type ContactHalfSpace (description: The half-space participating in this contact.).-->
 					<socket_half_space>/contactgeometryset/floor</socket_half_space>
 					<!--The stiffness constant (i.e., plane strain modulus), default is 1 (N/m^2)-->
@@ -9230,9 +9230,45 @@
 					<!--The transition velocity, default is 0.01 (m/s).-->
 					<transition_velocity>0.20000000000000001</transition_velocity>
 				</SmoothSphereHalfSpaceForce>
-				<SmoothSphereHalfSpaceForce name="SmoothSphereHalfSpaceForce_r_pros_toe_r">
+				<SmoothSphereHalfSpaceForce name="SmoothSphereHalfSpaceForce_r_pros_heel_2_r">
 					<!--Path to a Component that satisfies the Socket 'sphere' of type ContactSphere (description: The sphere participating in this contact.).-->
-					<socket_sphere>/contactgeometryset/r_pros_toe</socket_sphere>
+					<socket_sphere>/contactgeometryset/r_pros_heel_2</socket_sphere>
+					<!--Path to a Component that satisfies the Socket 'half_space' of type ContactHalfSpace (description: The half-space participating in this contact.).-->
+					<socket_half_space>/contactgeometryset/floor</socket_half_space>
+					<!--The stiffness constant (i.e., plane strain modulus), default is 1 (N/m^2)-->
+					<stiffness>1000000</stiffness>
+					<!--The dissipation coefficient, default is 0 (s/m).-->
+					<dissipation>2</dissipation>
+					<!--The coefficient of static friction, default is 0.-->
+					<static_friction>0.80000000000000004</static_friction>
+					<!--The coefficient of dynamic friction, default is 0.-->
+					<dynamic_friction>0.80000000000000004</dynamic_friction>
+					<!--The coefficient of viscous friction, default is 0.-->
+					<viscous_friction>0.5</viscous_friction>
+					<!--The transition velocity, default is 0.01 (m/s).-->
+					<transition_velocity>0.20000000000000001</transition_velocity>
+				</SmoothSphereHalfSpaceForce>
+				<SmoothSphereHalfSpaceForce name="SmoothSphereHalfSpaceForce_r_pros_toe_1_r">
+					<!--Path to a Component that satisfies the Socket 'sphere' of type ContactSphere (description: The sphere participating in this contact.).-->
+					<socket_sphere>/contactgeometryset/r_pros_toe_1</socket_sphere>
+					<!--Path to a Component that satisfies the Socket 'half_space' of type ContactHalfSpace (description: The half-space participating in this contact.).-->
+					<socket_half_space>/contactgeometryset/floor</socket_half_space>
+					<!--The stiffness constant (i.e., plane strain modulus), default is 1 (N/m^2)-->
+					<stiffness>1000000</stiffness>
+					<!--The dissipation coefficient, default is 0 (s/m).-->
+					<dissipation>2</dissipation>
+					<!--The coefficient of static friction, default is 0.-->
+					<static_friction>0.80000000000000004</static_friction>
+					<!--The coefficient of dynamic friction, default is 0.-->
+					<dynamic_friction>0.80000000000000004</dynamic_friction>
+					<!--The coefficient of viscous friction, default is 0.-->
+					<viscous_friction>0.5</viscous_friction>
+					<!--The transition velocity, default is 0.01 (m/s).-->
+					<transition_velocity>0.20000000000000001</transition_velocity>
+				</SmoothSphereHalfSpaceForce>
+				<SmoothSphereHalfSpaceForce name="SmoothSphereHalfSpaceForce_r_pros_toe_2_r">
+					<!--Path to a Component that satisfies the Socket 'sphere' of type ContactSphere (description: The sphere participating in this contact.).-->
+					<socket_sphere>/contactgeometryset/r_pros_toe_2</socket_sphere>
 					<!--Path to a Component that satisfies the Socket 'half_space' of type ContactHalfSpace (description: The half-space participating in this contact.).-->
 					<socket_half_space>/contactgeometryset/floor</socket_half_space>
 					<!--The stiffness constant (i.e., plane strain modulus), default is 1 (N/m^2)-->
@@ -9763,25 +9799,45 @@
 					<!--The radius of the sphere (default: 0).-->
 					<radius>0.032000000000000001</radius>
 				</ContactSphere>
-				<ContactSphere name="r_pros_heel">
+				<ContactSphere name="r_pros_heel_1">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this contact geometry is attached.).-->
 					<socket_frame>/bodyset/pros_foot_r</socket_frame>
 					<!--The location of the contact geometry center in the PhysicalFrame.-->
-					<location>-0.018769999999999998 -0.021950000000000001 0</location>
+					<location>0.0033687669783830643 -0.021950000897049904 -0.035000000149011612</location>
 					<!--The orientation of the contact geometry in the PhysicalFrame in body-fixed XYZ Euler angles.-->
-					<orientation>0 0 0</orientation>
+					<orientation>-0 0 -0</orientation>
 					<!--The radius of the sphere (default: 0).-->
-					<radius>0.050000000000000003</radius>
+					<radius>0.032000001519918442</radius>
 				</ContactSphere>
-				<ContactSphere name="r_pros_toe">
+				<ContactSphere name="r_pros_heel_2">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this contact geometry is attached.).-->
 					<socket_frame>/bodyset/pros_foot_r</socket_frame>
 					<!--The location of the contact geometry center in the PhysicalFrame.-->
-					<location>0.14999999999999999 -0.021950000000000001 0</location>
+					<location>0.0024391207844018936 -0.021950000897049904 0.035000000149011612</location>
+					<!--The orientation of the contact geometry in the PhysicalFrame in body-fixed XYZ Euler angles.-->
+					<orientation>-0 0 -0</orientation>
+					<!--The radius of the sphere (default: 0).-->
+					<radius>0.032000001519918442</radius>
+				</ContactSphere>
+				<ContactSphere name="r_pros_toe_1">
+					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this contact geometry is attached.).-->
+					<socket_frame>/bodyset/pros_foot_r</socket_frame>
+					<!--The location of the contact geometry center in the PhysicalFrame.-->
+					<location>0.15000000596046448 -0.021950000897049904 0.035000000149011612</location>
 					<!--The orientation of the contact geometry in the PhysicalFrame in body-fixed XYZ Euler angles.-->
 					<orientation>0 0 0</orientation>
 					<!--The radius of the sphere (default: 0).-->
-					<radius>0.050000000000000003</radius>
+					<radius>0.032000001519918442</radius>
+				</ContactSphere>
+				<ContactSphere name="r_pros_toe_2">
+					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this contact geometry is attached.).-->
+					<socket_frame>/bodyset/pros_foot_r</socket_frame>
+					<!--The location of the contact geometry center in the PhysicalFrame.-->
+					<location>0.15000000596046448 -0.021950000897049904 -0.035000000149011612</location>
+					<!--The orientation of the contact geometry in the PhysicalFrame in body-fixed XYZ Euler angles.-->
+					<orientation>-0 0 -0</orientation>
+					<!--The radius of the sphere (default: 0).-->
+					<radius>0.032000001519918442</radius>
 				</ContactSphere>
 			</objects>
 			<groups />
