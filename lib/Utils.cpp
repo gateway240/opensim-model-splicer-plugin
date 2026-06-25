@@ -1,8 +1,8 @@
 #ifndef UTILS_H
 #define UTILS_H
-#include <chrono>    // For std::chrono functions
+#include <chrono> // For std::chrono functions
 #include <filesystem>
-#include <iomanip>   // For std::setfill and std::setw
+#include <iomanip> // For std::setfill and std::setw
 #include <iostream>
 #include <random>
 #include <regex>
@@ -27,22 +27,22 @@ bool createDirectory(const std::filesystem::path &resultsDir) {
 }
 
 std::string getHumanReadableEpochTime(int64_t time_now) {
-    // Convert seconds since epoch to time_point
-    std::chrono::time_point<std::chrono::system_clock> time_point =
-        std::chrono::system_clock::time_point(std::chrono::seconds(time_now));
+  // Convert seconds since epoch to time_point
+  std::chrono::time_point<std::chrono::system_clock> time_point =
+      std::chrono::system_clock::time_point(std::chrono::seconds(time_now));
 
-    // Convert to time_t for formatting
-    std::time_t time_t_now = std::chrono::system_clock::to_time_t(time_point);
+  // Convert to time_t for formatting
+  std::time_t time_t_now = std::chrono::system_clock::to_time_t(time_point);
 
-    // Create a string stream to format the time
-    std::ostringstream oss;
-    oss << std::put_time(std::localtime(&time_t_now), "%Y-%m-%d_%H-%M-%S");
+  // Create a string stream to format the time
+  std::ostringstream oss;
+  oss << std::put_time(std::localtime(&time_t_now), "%Y-%m-%d_%H-%M-%S");
 
-    // Get the formatted string
-    std::string formatted_time = oss.str();
+  // Get the formatted string
+  std::string formatted_time = oss.str();
 
-    // Return the formatted string as a valid file name
-    return formatted_time;
+  // Return the formatted string as a valid file name
+  return formatted_time;
 }
 
 std::string time_difference_in_HH_MM_SS_MMM(
@@ -165,5 +165,40 @@ void findStartEndTimeBasedOnNaN(OpenSim::TimeSeriesTableVec3 &table,
     startTime = table.getIndependentColumn()[startIndex];
     endTime = table.getIndependentColumn()[endIndex];
   }
+}
+
+void find_and_replace(
+    const std::string& filePath,
+    const std::unordered_map<std::string, std::string>& replacements)
+{
+    std::ifstream file(filePath);
+    if (!file.is_open()) {
+        throw std::runtime_error("Failed to open file: " + filePath);
+    }
+
+    std::vector<std::string> lines;
+    std::string line;
+
+    while (std::getline(file, line)) {
+        for (const auto& [oldStr, newStr] : replacements) {
+            size_t pos = 0;
+            while ((pos = line.find(oldStr, pos)) != std::string::npos) {
+                line.replace(pos, oldStr.length(), newStr);
+                pos += newStr.length();
+            }
+        }
+        lines.push_back(line);
+    }
+
+    file.close();
+
+    std::ofstream outFile(filePath, std::ios::trunc);
+    if (!outFile.is_open()) {
+        throw std::runtime_error("Failed to write file: " + filePath);
+    }
+
+    for (const auto& modifiedLine : lines) {
+        outFile << modifiedLine << '\n';
+    }
 }
 #endif // UTILS_H

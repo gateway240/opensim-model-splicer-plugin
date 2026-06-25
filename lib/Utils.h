@@ -1,10 +1,10 @@
 #ifndef UTILS_H
 #define UTILS_H
 
-#include <chrono>    // For std::chrono functions
+#include <OpenSim/Common/TRCFileAdapter.h>
+#include <chrono> // For std::chrono functions
 #include <filesystem>
 #include <string>
-#include <OpenSim/Common/TRCFileAdapter.h>
 
 // Function to create the required directory structure
 bool createDirectory(const std::filesystem::path &resultsDir);
@@ -22,5 +22,9 @@ void rotateMarkerTable(OpenSim::TimeSeriesTableVec3 &table,
 
 void findStartEndTimeBasedOnNaN(OpenSim::TimeSeriesTableVec3 &table,
                                 double &startTime, double &endTime);
+
+void find_and_replace(
+    const std::string& filePath,
+    const std::unordered_map<std::string, std::string>& replacements);
 
 #endif // UTILS_H

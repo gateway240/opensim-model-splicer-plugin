@@ -4334,7 +4334,7 @@
 					<socket_child_frame>scapula_2_l_offset</socket_child_frame>
 					<!--List containing the generalized coordinates (q's) that parameterize this joint.-->
 					<coordinates>
-						<Coordinate name="AC_l_z">
+						<Coordinate name="scapula_elevation_l">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
 							<default_value>-0.0079979700000000001</default_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -4394,7 +4394,7 @@
 						<!--The second TransformAxis defining a rotation about an axis with to a set of generalized coordinates.-->
 						<TransformAxis name="rotation2">
 							<!--The names of the generalized coordinates that serve as the independent variables of the transform function.-->
-							<coordinates>AC_l_z</coordinates>
+							<coordinates>scapula_elevation_l</coordinates>
 							<!--The rotation or translation axis for the transform. Default: (1,0,0).-->
 							<axis>0 0 1</axis>
 							<!--The transform function with respect to the generalized coordinates used to represent the amount of displacement about or along the TransformAxis. Default: Constant(0).-->
@@ -4447,7 +4447,7 @@
 					<socket_child_frame>scapula_l_offset</socket_child_frame>
 					<!--List containing the generalized coordinates (q's) that parameterize this joint.-->
 					<coordinates>
-						<Coordinate name="AC_l_x">
+						<Coordinate name="scapula_upward_rot_l">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
 							<default_value>-0.21051655</default_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -4516,7 +4516,7 @@
 						<!--The third TransformAxis defining a rotation about an axis with to a set of generalized coordinates.-->
 						<TransformAxis name="rotation3">
 							<!--The names of the generalized coordinates that serve as the independent variables of the transform function.-->
-							<coordinates>AC_l_x</coordinates>
+							<coordinates>scapula_upward_rot_l</coordinates>
 							<!--The rotation or translation axis for the transform. Default: (1,0,0).-->
 							<axis>1 0 0</axis>
 							<!--The transform function with respect to the generalized coordinates used to represent the amount of displacement about or along the TransformAxis. Default: Constant(0).-->
@@ -4560,7 +4560,7 @@
 					<socket_child_frame>humerus_1_l_offset</socket_child_frame>
 					<!--List containing the generalized coordinates (q's) that parameterize this joint.-->
 					<coordinates>
-						<Coordinate name="GH_l_y">
+						<Coordinate name="shoulder_l_x">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
 							<default_value>0.76557750627999999</default_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -4620,7 +4620,7 @@
 						<!--The second TransformAxis defining a rotation about an axis with to a set of generalized coordinates.-->
 						<TransformAxis name="rotation2">
 							<!--The names of the generalized coordinates that serve as the independent variables of the transform function.-->
-							<coordinates>GH_l_y</coordinates>
+							<coordinates>shoulder_l_x</coordinates>
 							<!--The rotation or translation axis for the transform. Default: (1,0,0).-->
 							<axis>0 1 0</axis>
 							<!--The transform function with respect to the generalized coordinates used to represent the amount of displacement about or along the TransformAxis. Default: Constant(0).-->
@@ -4673,7 +4673,7 @@
 					<socket_child_frame>humerus_2_l_offset</socket_child_frame>
 					<!--List containing the generalized coordinates (q's) that parameterize this joint.-->
 					<coordinates>
-						<Coordinate name="GH_l_z">
+						<Coordinate name="shoulder_l_z">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
 							<default_value>0.0037995799999999999</default_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -4742,7 +4742,7 @@
 						<!--The third TransformAxis defining a rotation about an axis with to a set of generalized coordinates.-->
 						<TransformAxis name="rotation3">
 							<!--The names of the generalized coordinates that serve as the independent variables of the transform function.-->
-							<coordinates>GH_l_z</coordinates>
+							<coordinates>shoulder_l_z</coordinates>
 							<!--The rotation or translation axis for the transform. Default: (1,0,0).-->
 							<axis>0 0 1</axis>
 							<!--The transform function with respect to the generalized coordinates used to represent the amount of displacement about or along the TransformAxis. Default: Constant(0).-->
@@ -4786,7 +4786,7 @@
 					<socket_child_frame>humerus_l_offset</socket_child_frame>
 					<!--List containing the generalized coordinates (q's) that parameterize this joint.-->
 					<coordinates>
-						<Coordinate name="GH_l_yy">
+						<Coordinate name="shoulder_l_xy">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
 							<default_value>-0.60490772999999998</default_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -4846,7 +4846,7 @@
 						<!--The second TransformAxis defining a rotation about an axis with to a set of generalized coordinates.-->
 						<TransformAxis name="rotation2">
 							<!--The names of the generalized coordinates that serve as the independent variables of the transform function.-->
-							<coordinates>GH_l_yy</coordinates>
+							<coordinates>shoulder_l_xy</coordinates>
 							<!--The rotation or translation axis for the transform. Default: (1,0,0).-->
 							<axis>0 1 0</axis>
 							<!--The transform function with respect to the generalized coordinates used to represent the amount of displacement about or along the TransformAxis. Default: Constant(0).-->
@@ -4899,7 +4899,7 @@
 					<socket_child_frame>ulna_l_offset</socket_child_frame>
 					<!--List containing the generalized coordinates (q's) that parameterize this joint.-->
 					<coordinates>
-						<Coordinate name="EL_l_x">
+						<Coordinate name="elbow_flexion_l">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
 							<default_value>0.087266460000000004</default_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -4950,7 +4950,7 @@
 						<!--The first TransformAxis defining a rotation about an axis with to a set of generalized coordinates.-->
 						<TransformAxis name="rotation1">
 							<!--The names of the generalized coordinates that serve as the independent variables of the transform function.-->
-							<coordinates>EL_l_x</coordinates>
+							<coordinates>elbow_flexion_l</coordinates>
 							<!--The rotation or translation axis for the transform. Default: (1,0,0).-->
 							<axis>0.99976611999999998 0.0084460000000000004 -0.019909</axis>
 							<!--The transform function with respect to the generalized coordinates used to represent the amount of displacement about or along the TransformAxis. Default: Constant(0).-->
@@ -5012,7 +5012,7 @@
 					<socket_child_frame>radius_l_offset</socket_child_frame>
 					<!--List containing the generalized coordinates (q's) that parameterize this joint.-->
 					<coordinates>
-						<Coordinate name="PS_l_y">
+						<Coordinate name="pro_sup_l">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
 							<default_value>0.087266460000000004</default_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -5063,7 +5063,7 @@
 						<!--The first TransformAxis defining a rotation about an axis with to a set of generalized coordinates.-->
 						<TransformAxis name="rotation1">
 							<!--The names of the generalized coordinates that serve as the independent variables of the transform function.-->
-							<coordinates>PS_l_y</coordinates>
+							<coordinates>pro_sup_l</coordinates>
 							<!--The rotation or translation axis for the transform. Default: (1,0,0).-->
 							<axis>-0.11329498 0.97405881999999999 0.19589196</axis>
 							<!--The transform function with respect to the generalized coordinates used to represent the amount of displacement about or along the TransformAxis. Default: Constant(0).-->
@@ -5164,7 +5164,7 @@
 					<socket_child_frame>clavicle_1_r_offset</socket_child_frame>
 					<!--List containing the generalized coordinates (q's) that parameterize this joint.-->
 					<coordinates>
-						<Coordinate name="SC_r_y">
+						<Coordinate name="scapula_abduction_r">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
 							<default_value>-0.58444077999999999</default_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -5215,7 +5215,7 @@
 						<!--The first TransformAxis defining a rotation about an axis with to a set of generalized coordinates.-->
 						<TransformAxis name="rotation1">
 							<!--The names of the generalized coordinates that serve as the independent variables of the transform function.-->
-							<coordinates>SC_r_y</coordinates>
+							<coordinates>scapula_abduction_r</coordinates>
 							<!--The rotation or translation axis for the transform. Default: (1,0,0).-->
 							<axis>0 1 0</axis>
 							<!--The transform function with respect to the generalized coordinates used to represent the amount of displacement about or along the TransformAxis. Default: Constant(0).-->
@@ -5616,7 +5616,7 @@
 					<socket_child_frame>scapula_2_r_offset</socket_child_frame>
 					<!--List containing the generalized coordinates (q's) that parameterize this joint.-->
 					<coordinates>
-						<Coordinate name="AC_r_z">
+						<Coordinate name="scapula_elevation_r">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
 							<default_value>0.0079979700000000001</default_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -5676,7 +5676,7 @@
 						<!--The second TransformAxis defining a rotation about an axis with to a set of generalized coordinates.-->
 						<TransformAxis name="rotation2">
 							<!--The names of the generalized coordinates that serve as the independent variables of the transform function.-->
-							<coordinates>AC_r_z</coordinates>
+							<coordinates>scapula_elevation_r</coordinates>
 							<!--The rotation or translation axis for the transform. Default: (1,0,0).-->
 							<axis>0 0 1</axis>
 							<!--The transform function with respect to the generalized coordinates used to represent the amount of displacement about or along the TransformAxis. Default: Constant(0).-->
@@ -5729,7 +5729,7 @@
 					<socket_child_frame>scapula_r_offset</socket_child_frame>
 					<!--List containing the generalized coordinates (q's) that parameterize this joint.-->
 					<coordinates>
-						<Coordinate name="AC_r_x">
+						<Coordinate name="scapula_upward_rot_r">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
 							<default_value>-0.21051655</default_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -5798,7 +5798,7 @@
 						<!--The third TransformAxis defining a rotation about an axis with to a set of generalized coordinates.-->
 						<TransformAxis name="rotation3">
 							<!--The names of the generalized coordinates that serve as the independent variables of the transform function.-->
-							<coordinates>AC_r_x</coordinates>
+							<coordinates>scapula_upward_rot_r</coordinates>
 							<!--The rotation or translation axis for the transform. Default: (1,0,0).-->
 							<axis>1 0 0</axis>
 							<!--The transform function with respect to the generalized coordinates used to represent the amount of displacement about or along the TransformAxis. Default: Constant(0).-->
@@ -5842,7 +5842,7 @@
 					<socket_child_frame>humerus_1_r_offset</socket_child_frame>
 					<!--List containing the generalized coordinates (q's) that parameterize this joint.-->
 					<coordinates>
-						<Coordinate name="GH_r_y">
+						<Coordinate name="shoulder_r_x">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
 							<default_value>0.76557750627999999</default_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -5902,7 +5902,7 @@
 						<!--The second TransformAxis defining a rotation about an axis with to a set of generalized coordinates.-->
 						<TransformAxis name="rotation2">
 							<!--The names of the generalized coordinates that serve as the independent variables of the transform function.-->
-							<coordinates>GH_r_y</coordinates>
+							<coordinates>shoulder_r_x</coordinates>
 							<!--The rotation or translation axis for the transform. Default: (1,0,0).-->
 							<axis>0 1 0</axis>
 							<!--The transform function with respect to the generalized coordinates used to represent the amount of displacement about or along the TransformAxis. Default: Constant(0).-->
@@ -5955,7 +5955,7 @@
 					<socket_child_frame>humerus_2_r_offset</socket_child_frame>
 					<!--List containing the generalized coordinates (q's) that parameterize this joint.-->
 					<coordinates>
-						<Coordinate name="GH_r_z">
+						<Coordinate name="shoulder_r_z">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
 							<default_value>-0.0037995799999999999</default_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -6024,7 +6024,7 @@
 						<!--The third TransformAxis defining a rotation about an axis with to a set of generalized coordinates.-->
 						<TransformAxis name="rotation3">
 							<!--The names of the generalized coordinates that serve as the independent variables of the transform function.-->
-							<coordinates>GH_r_z</coordinates>
+							<coordinates>shoulder_r_z</coordinates>
 							<!--The rotation or translation axis for the transform. Default: (1,0,0).-->
 							<axis>0 0 1</axis>
 							<!--The transform function with respect to the generalized coordinates used to represent the amount of displacement about or along the TransformAxis. Default: Constant(0).-->
@@ -6068,7 +6068,7 @@
 					<socket_child_frame>humerus_r_offset</socket_child_frame>
 					<!--List containing the generalized coordinates (q's) that parameterize this joint.-->
 					<coordinates>
-						<Coordinate name="GH_r_yy">
+						<Coordinate name="shoulder_r_xy">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
 							<default_value>-0.60490772999999998</default_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -6128,7 +6128,7 @@
 						<!--The second TransformAxis defining a rotation about an axis with to a set of generalized coordinates.-->
 						<TransformAxis name="rotation2">
 							<!--The names of the generalized coordinates that serve as the independent variables of the transform function.-->
-							<coordinates>GH_r_yy</coordinates>
+							<coordinates>shoulder_r_xy</coordinates>
 							<!--The rotation or translation axis for the transform. Default: (1,0,0).-->
 							<axis>0 1 0</axis>
 							<!--The transform function with respect to the generalized coordinates used to represent the amount of displacement about or along the TransformAxis. Default: Constant(0).-->
@@ -6181,7 +6181,7 @@
 					<socket_child_frame>ulna_r_offset</socket_child_frame>
 					<!--List containing the generalized coordinates (q's) that parameterize this joint.-->
 					<coordinates>
-						<Coordinate name="EL_r_x">
+						<Coordinate name="elbow_flexion_r">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
 							<default_value>0.087266460000000004</default_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -6232,7 +6232,7 @@
 						<!--The first TransformAxis defining a rotation about an axis with to a set of generalized coordinates.-->
 						<TransformAxis name="rotation1">
 							<!--The names of the generalized coordinates that serve as the independent variables of the transform function.-->
-							<coordinates>EL_r_x</coordinates>
+							<coordinates>elbow_flexion_r</coordinates>
 							<!--The rotation or translation axis for the transform. Default: (1,0,0).-->
 							<axis>0.99976611999999998 0.0084460000000000004 -0.019909</axis>
 							<!--The transform function with respect to the generalized coordinates used to represent the amount of displacement about or along the TransformAxis. Default: Constant(0).-->
@@ -6294,7 +6294,7 @@
 					<socket_child_frame>radius_r_offset</socket_child_frame>
 					<!--List containing the generalized coordinates (q's) that parameterize this joint.-->
 					<coordinates>
-						<Coordinate name="PS_r_y">
+						<Coordinate name="pro_sup_r">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
 							<default_value>0.087266460000000004</default_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -6345,7 +6345,7 @@
 						<!--The first TransformAxis defining a rotation about an axis with to a set of generalized coordinates.-->
 						<TransformAxis name="rotation1">
 							<!--The names of the generalized coordinates that serve as the independent variables of the transform function.-->
-							<coordinates>PS_r_y</coordinates>
+							<coordinates>pro_sup_r</coordinates>
 							<!--The rotation or translation axis for the transform. Default: (1,0,0).-->
 							<axis>-0.11329498 0.97405881999999999 0.19589196</axis>
 							<!--The transform function with respect to the generalized coordinates used to represent the amount of displacement about or along the TransformAxis. Default: Constant(0).-->
