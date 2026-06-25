@@ -1,0 +1,244 @@
+[2026-06-25 10:32:35.380] [info] Updating Model file from 40500 to latest format...
+[2026-06-25 10:32:35.382] [info] Loaded model bsm_body from file ./bsm/bsm_body.osim
+[2026-06-25 10:32:35.458] [info] Loaded model das3_v40600_right_rename from file ./das3_v40600_right_rename.osim
+[2026-06-25 10:32:35.459] [warning] Couldn't find file 'ground_ribs.vtp'.
+[2026-06-25 10:32:35.459] [warning] Couldn't find file 'ground_spine.vtp'.
+[2026-06-25 10:32:35.459] [warning] Couldn't find file 'ground_skull.vtp'.
+[2026-06-25 10:32:35.459] [warning] Couldn't find file 'ground_jaw.vtp'.
+[2026-06-25 10:32:35.459] [warning] Couldn't find file 'rclavicle.vtp'.
+[2026-06-25 10:32:35.459] [warning] Couldn't find file 'rscapula.vtp'.
+[2026-06-25 10:32:35.459] [warning] Couldn't find file 'rhumerus.vtp'.
+[2026-06-25 10:32:35.459] [warning] Couldn't find file 'rulna.vtp'.
+[2026-06-25 10:32:35.459] [warning] Couldn't find file 'rradius.vtp'.
+[2026-06-25 10:32:35.459] [warning] Couldn't find file 'r_hand.vtp'.
+[2026-06-25 10:32:35.466] [info] Loaded model das3_v40600_left_mirror_rename from file ./das3_v40600_left_mirror_rename.osim
+[2026-06-25 10:32:35.466] [warning] Couldn't find file 'ground_ribs.vtp'.
+[2026-06-25 10:32:35.466] [warning] Couldn't find file 'ground_spine.vtp'.
+[2026-06-25 10:32:35.466] [warning] Couldn't find file 'ground_skull.vtp'.
+[2026-06-25 10:32:35.466] [warning] Couldn't find file 'ground_jaw.vtp'.
+[2026-06-25 10:34:02.521] [info] Updating Model file from 40500 to latest format...
+[2026-06-25 10:34:02.523] [info] Loaded model bsm_body from file ./bsm/bsm_body.osim
+[2026-06-25 10:34:02.600] [info] Loaded model das3_v40600_right_rename from file ./das3_v40600_right_rename.osim
+[2026-06-25 10:34:02.601] [warning] Couldn't find file 'ground_ribs.vtp'.
+[2026-06-25 10:34:02.601] [warning] Couldn't find file 'ground_spine.vtp'.
+[2026-06-25 10:34:02.601] [warning] Couldn't find file 'ground_skull.vtp'.
+[2026-06-25 10:34:02.601] [warning] Couldn't find file 'ground_jaw.vtp'.
+[2026-06-25 10:34:02.601] [warning] Couldn't find file 'rclavicle.vtp'.
+[2026-06-25 10:34:02.601] [warning] Couldn't find file 'rscapula.vtp'.
+[2026-06-25 10:34:02.601] [warning] Couldn't find file 'rhumerus.vtp'.
+[2026-06-25 10:34:02.601] [warning] Couldn't find file 'rulna.vtp'.
+[2026-06-25 10:34:02.601] [warning] Couldn't find file 'rradius.vtp'.
+[2026-06-25 10:34:02.601] [warning] Couldn't find file 'r_hand.vtp'.
+[2026-06-25 10:34:02.605] [info] Loaded model das3_v40600_left_mirror_rename from file ./das3_v40600_left_mirror_rename.osim
+[2026-06-25 10:34:02.605] [warning] Couldn't find file 'ground_ribs.vtp'.
+[2026-06-25 10:34:02.605] [warning] Couldn't find file 'ground_spine.vtp'.
+[2026-06-25 10:34:02.605] [warning] Couldn't find file 'ground_skull.vtp'.
+[2026-06-25 10:34:02.605] [warning] Couldn't find file 'ground_jaw.vtp'.
+[2026-06-25 10:34:18.181] [info] Updating Model file from 40500 to latest format...
+[2026-06-25 10:34:18.184] [info] Loaded model bsm_body from file ./bsm/bsm_body.osim
+[2026-06-25 10:34:18.261] [info] Loaded model das3_v40600_right_rename from file ./das3_v40600_right_rename.osim
+[2026-06-25 10:34:18.261] [warning] Couldn't find file 'ground_ribs.vtp'.
+[2026-06-25 10:34:18.261] [warning] Couldn't find file 'ground_spine.vtp'.
+[2026-06-25 10:34:18.261] [warning] Couldn't find file 'ground_skull.vtp'.
+[2026-06-25 10:34:18.261] [warning] Couldn't find file 'ground_jaw.vtp'.
+[2026-06-25 10:34:18.261] [warning] Couldn't find file 'rclavicle.vtp'.
+[2026-06-25 10:34:18.261] [warning] Couldn't find file 'rscapula.vtp'.
+[2026-06-25 10:34:18.261] [warning] Couldn't find file 'rhumerus.vtp'.
+[2026-06-25 10:34:18.261] [warning] Couldn't find file 'rulna.vtp'.
+[2026-06-25 10:34:18.261] [warning] Couldn't find file 'rradius.vtp'.
+[2026-06-25 10:34:18.261] [warning] Couldn't find file 'r_hand.vtp'.
+[2026-06-25 10:34:18.265] [info] Loaded model das3_v40600_left_mirror_rename from file ./das3_v40600_left_mirror_rename.osim
+[2026-06-25 10:34:18.265] [warning] Couldn't find file 'ground_ribs.vtp'.
+[2026-06-25 10:34:18.265] [warning] Couldn't find file 'ground_spine.vtp'.
+[2026-06-25 10:34:18.265] [warning] Couldn't find file 'ground_skull.vtp'.
+[2026-06-25 10:34:18.265] [warning] Couldn't find file 'ground_jaw.vtp'.
+[2026-06-25 10:37:42.521] [info] Updating Model file from 40500 to latest format...
+[2026-06-25 10:37:42.524] [info] Loaded model bsm_body from file ./bsm/bsm_body.osim
+[2026-06-25 10:37:42.597] [info] Loaded model das3_v40600_right_rename from file ./das3_v40600_right_rename.osim
+[2026-06-25 10:37:42.598] [warning] Couldn't find file 'ground_ribs.vtp'.
+[2026-06-25 10:37:42.598] [warning] Couldn't find file 'ground_spine.vtp'.
+[2026-06-25 10:37:42.598] [warning] Couldn't find file 'ground_skull.vtp'.
+[2026-06-25 10:37:42.598] [warning] Couldn't find file 'ground_jaw.vtp'.
+[2026-06-25 10:37:42.598] [warning] Couldn't find file 'rclavicle.vtp'.
+[2026-06-25 10:37:42.598] [warning] Couldn't find file 'rscapula.vtp'.
+[2026-06-25 10:37:42.598] [warning] Couldn't find file 'rhumerus.vtp'.
+[2026-06-25 10:37:42.598] [warning] Couldn't find file 'rulna.vtp'.
+[2026-06-25 10:37:42.598] [warning] Couldn't find file 'rradius.vtp'.
+[2026-06-25 10:37:42.598] [warning] Couldn't find file 'r_hand.vtp'.
+[2026-06-25 10:37:42.601] [info] Loaded model das3_v40600_left_mirror_rename from file ./das3_v40600_left_mirror_rename.osim
+[2026-06-25 10:37:42.601] [warning] Couldn't find file 'ground_ribs.vtp'.
+[2026-06-25 10:37:42.601] [warning] Couldn't find file 'ground_spine.vtp'.
+[2026-06-25 10:37:42.601] [warning] Couldn't find file 'ground_skull.vtp'.
+[2026-06-25 10:37:42.601] [warning] Couldn't find file 'ground_jaw.vtp'.
+[2026-06-25 10:38:38.501] [info] Updating Model file from 40500 to latest format...
+[2026-06-25 10:38:38.503] [info] Loaded model bsm_body from file ./bsm/bsm_body.osim
+[2026-06-25 10:38:38.577] [info] Loaded model das3_v40600_right_rename from file ./das3_v40600_right_rename.osim
+[2026-06-25 10:38:38.577] [warning] Couldn't find file 'ground_ribs.vtp'.
+[2026-06-25 10:38:38.577] [warning] Couldn't find file 'ground_spine.vtp'.
+[2026-06-25 10:38:38.577] [warning] Couldn't find file 'ground_skull.vtp'.
+[2026-06-25 10:38:38.577] [warning] Couldn't find file 'ground_jaw.vtp'.
+[2026-06-25 10:38:38.577] [warning] Couldn't find file 'rclavicle.vtp'.
+[2026-06-25 10:38:38.577] [warning] Couldn't find file 'rscapula.vtp'.
+[2026-06-25 10:38:38.577] [warning] Couldn't find file 'rhumerus.vtp'.
+[2026-06-25 10:38:38.577] [warning] Couldn't find file 'rulna.vtp'.
+[2026-06-25 10:38:38.577] [warning] Couldn't find file 'rradius.vtp'.
+[2026-06-25 10:38:38.577] [warning] Couldn't find file 'r_hand.vtp'.
+[2026-06-25 10:38:38.581] [info] Loaded model das3_v40600_left_mirror_rename from file ./das3_v40600_left_mirror_rename.osim
+[2026-06-25 10:38:38.581] [warning] Couldn't find file 'ground_ribs.vtp'.
+[2026-06-25 10:38:38.581] [warning] Couldn't find file 'ground_spine.vtp'.
+[2026-06-25 10:38:38.581] [warning] Couldn't find file 'ground_skull.vtp'.
+[2026-06-25 10:38:38.581] [warning] Couldn't find file 'ground_jaw.vtp'.
+[2026-06-25 10:38:53.877] [info] Updating Model file from 40500 to latest format...
+[2026-06-25 10:38:53.879] [info] Loaded model bsm_body from file ./bsm/bsm_body.osim
+[2026-06-25 10:38:53.953] [info] Loaded model das3_v40600_right_rename from file ./das3_v40600_right_rename.osim
+[2026-06-25 10:38:53.953] [warning] Couldn't find file 'ground_ribs.vtp'.
+[2026-06-25 10:38:53.953] [warning] Couldn't find file 'ground_spine.vtp'.
+[2026-06-25 10:38:53.953] [warning] Couldn't find file 'ground_skull.vtp'.
+[2026-06-25 10:38:53.953] [warning] Couldn't find file 'ground_jaw.vtp'.
+[2026-06-25 10:38:53.953] [warning] Couldn't find file 'rclavicle.vtp'.
+[2026-06-25 10:38:53.953] [warning] Couldn't find file 'rscapula.vtp'.
+[2026-06-25 10:38:53.953] [warning] Couldn't find file 'rhumerus.vtp'.
+[2026-06-25 10:38:53.953] [warning] Couldn't find file 'rulna.vtp'.
+[2026-06-25 10:38:53.953] [warning] Couldn't find file 'rradius.vtp'.
+[2026-06-25 10:38:53.953] [warning] Couldn't find file 'r_hand.vtp'.
+[2026-06-25 10:38:53.957] [info] Loaded model das3_v40600_left_mirror_rename from file ./das3_v40600_left_mirror_rename.osim
+[2026-06-25 10:38:53.957] [warning] Couldn't find file 'ground_ribs.vtp'.
+[2026-06-25 10:38:53.957] [warning] Couldn't find file 'ground_spine.vtp'.
+[2026-06-25 10:38:53.957] [warning] Couldn't find file 'ground_skull.vtp'.
+[2026-06-25 10:38:53.957] [warning] Couldn't find file 'ground_jaw.vtp'.
+[2026-06-25 10:38:53.968] [warning] Couldn't find file 'lclavicle.obj'.
+[2026-06-25 10:38:53.968] [warning] Couldn't find file 'lscapula.obj'.
+[2026-06-25 10:38:53.968] [warning] Couldn't find file 'lhumerus.obj'.
+[2026-06-25 10:38:53.968] [warning] Couldn't find file 'lulna.obj'.
+[2026-06-25 10:38:53.968] [warning] Couldn't find file 'lradius.obj'.
+[2026-06-25 10:38:53.968] [warning] Couldn't find file 'l_hand.obj'.
+[2026-06-25 10:42:28.672] [info] Updating Model file from 40500 to latest format...
+[2026-06-25 10:42:28.675] [info] Loaded model bsm_body from file ./bsm/bsm_body.osim
+[2026-06-25 10:42:28.753] [info] Loaded model das3_v40600_right_rename from file ./das3_v40600_right_rename.osim
+[2026-06-25 10:42:28.754] [warning] Couldn't find file 'ground_ribs.vtp'.
+[2026-06-25 10:42:28.754] [warning] Couldn't find file 'ground_spine.vtp'.
+[2026-06-25 10:42:28.754] [warning] Couldn't find file 'ground_skull.vtp'.
+[2026-06-25 10:42:28.754] [warning] Couldn't find file 'ground_jaw.vtp'.
+[2026-06-25 10:42:28.754] [warning] Couldn't find file 'rclavicle.vtp'.
+[2026-06-25 10:42:28.754] [warning] Couldn't find file 'rscapula.vtp'.
+[2026-06-25 10:42:28.754] [warning] Couldn't find file 'rhumerus.vtp'.
+[2026-06-25 10:42:28.754] [warning] Couldn't find file 'rulna.vtp'.
+[2026-06-25 10:42:28.754] [warning] Couldn't find file 'rradius.vtp'.
+[2026-06-25 10:42:28.754] [warning] Couldn't find file 'r_hand.vtp'.
+[2026-06-25 10:42:28.758] [info] Loaded model das3_v40600_left_mirror_rename from file ./das3_v40600_left_mirror_rename.osim
+[2026-06-25 10:42:28.758] [warning] Couldn't find file 'ground_ribs.vtp'.
+[2026-06-25 10:42:28.758] [warning] Couldn't find file 'ground_spine.vtp'.
+[2026-06-25 10:42:28.758] [warning] Couldn't find file 'ground_skull.vtp'.
+[2026-06-25 10:42:28.758] [warning] Couldn't find file 'ground_jaw.vtp'.
+[2026-06-25 10:42:28.771] [warning] Couldn't find file 'lclavicle.obj'.
+[2026-06-25 10:42:28.771] [warning] Couldn't find file 'lscapula.obj'.
+[2026-06-25 10:42:28.771] [warning] Couldn't find file 'lhumerus.obj'.
+[2026-06-25 10:42:28.771] [warning] Couldn't find file 'lulna.obj'.
+[2026-06-25 10:42:28.771] [warning] Couldn't find file 'lradius.obj'.
+[2026-06-25 10:42:28.771] [warning] Couldn't find file 'l_hand.obj'.
+[2026-06-25 10:42:43.838] [info] Updating Model file from 40500 to latest format...
+[2026-06-25 10:42:43.840] [info] Loaded model bsm_body from file ./bsm/bsm_body.osim
+[2026-06-25 10:42:43.914] [info] Loaded model das3_v40600_right_rename from file ./das3_v40600_right_rename.osim
+[2026-06-25 10:42:43.915] [warning] Couldn't find file 'ground_ribs.vtp'.
+[2026-06-25 10:42:43.915] [warning] Couldn't find file 'ground_spine.vtp'.
+[2026-06-25 10:42:43.915] [warning] Couldn't find file 'ground_skull.vtp'.
+[2026-06-25 10:42:43.915] [warning] Couldn't find file 'ground_jaw.vtp'.
+[2026-06-25 10:42:43.915] [warning] Couldn't find file 'rclavicle.vtp'.
+[2026-06-25 10:42:43.915] [warning] Couldn't find file 'rscapula.vtp'.
+[2026-06-25 10:42:43.915] [warning] Couldn't find file 'rhumerus.vtp'.
+[2026-06-25 10:42:43.915] [warning] Couldn't find file 'rulna.vtp'.
+[2026-06-25 10:42:43.915] [warning] Couldn't find file 'rradius.vtp'.
+[2026-06-25 10:42:43.915] [warning] Couldn't find file 'r_hand.vtp'.
+[2026-06-25 10:42:43.918] [info] Loaded model das3_v40600_left_mirror_rename from file ./das3_v40600_left_mirror_rename.osim
+[2026-06-25 10:42:43.919] [warning] Couldn't find file 'ground_ribs.vtp'.
+[2026-06-25 10:42:43.919] [warning] Couldn't find file 'ground_spine.vtp'.
+[2026-06-25 10:42:43.919] [warning] Couldn't find file 'ground_skull.vtp'.
+[2026-06-25 10:42:43.919] [warning] Couldn't find file 'ground_jaw.vtp'.
+[2026-06-25 10:42:43.930] [warning] Couldn't find file 'lclavicle.obj'.
+[2026-06-25 10:42:43.930] [warning] Couldn't find file 'lscapula.obj'.
+[2026-06-25 10:42:43.930] [warning] Couldn't find file 'lhumerus.obj'.
+[2026-06-25 10:42:43.930] [warning] Couldn't find file 'lulna.obj'.
+[2026-06-25 10:42:43.930] [warning] Couldn't find file 'lradius.obj'.
+[2026-06-25 10:42:43.930] [warning] Couldn't find file 'l_hand.obj'.
+[2026-06-25 10:51:17.402] [info] Updating Model file from 40500 to latest format...
+[2026-06-25 10:51:17.404] [info] Loaded model bsm_body from file ./bsm/bsm_body.osim
+[2026-06-25 10:51:42.088] [info] Updating Model file from 40500 to latest format...
+[2026-06-25 10:51:42.091] [info] Loaded model bsm_body from file ./bsm/bsm_body.osim
+[2026-06-25 10:51:42.167] [info] Loaded model das3_v40600_r from file ./das3/das3_v40600_r.osim
+[2026-06-25 10:51:42.207] [info] Loaded model das3_v40600_l from file ./das3/das3_v40600_l.osim
+[2026-06-25 10:51:42.244] [warning] Couldn't find file 'r_clavicle.obj'.
+[2026-06-25 10:51:42.244] [warning] Couldn't find file 'r_scapula.obj'.
+[2026-06-25 10:51:42.244] [warning] Couldn't find file 'r_humerus.obj'.
+[2026-06-25 10:51:42.244] [warning] Couldn't find file 'r_ulna.obj'.
+[2026-06-25 10:51:42.244] [warning] Couldn't find file 'r_radius.obj'.
+[2026-06-25 10:51:42.244] [warning] Couldn't find file 'r_hand.obj'.
+[2026-06-25 10:51:42.244] [warning] Couldn't find file 'l_clavicle.obj'.
+[2026-06-25 10:51:42.244] [warning] Couldn't find file 'l_scapula.obj'.
+[2026-06-25 10:51:42.244] [warning] Couldn't find file 'l_humerus.obj'.
+[2026-06-25 10:51:42.244] [warning] Couldn't find file 'l_ulna.obj'.
+[2026-06-25 10:51:42.244] [warning] Couldn't find file 'r_radius.obj'.
+[2026-06-25 10:51:42.244] [warning] Couldn't find file 'l_hand.obj'.
+[2026-06-25 10:57:48.729] [info] Updating Model file from 40500 to latest format...
+[2026-06-25 10:57:48.731] [info] Loaded model bsm_body from file ./bsm/bsm_body.osim
+[2026-06-25 10:57:48.805] [info] Loaded model das3_v40600_r from file ./das3/das3_v40600_r.osim
+[2026-06-25 10:57:48.848] [info] Loaded model das3_v40600_l from file ./das3/das3_v40600_l.osim
+[2026-06-25 10:57:48.884] [warning] Couldn't find file 'r_clavicle.obj'.
+[2026-06-25 10:57:48.884] [warning] Couldn't find file 'r_scapula.obj'.
+[2026-06-25 10:57:48.884] [warning] Couldn't find file 'r_humerus.obj'.
+[2026-06-25 10:57:48.884] [warning] Couldn't find file 'r_ulna.obj'.
+[2026-06-25 10:57:48.884] [warning] Couldn't find file 'r_radius.obj'.
+[2026-06-25 10:57:48.884] [warning] Couldn't find file 'r_hand.obj'.
+[2026-06-25 10:57:48.884] [warning] Couldn't find file 'l_clavicle.obj'.
+[2026-06-25 10:57:48.884] [warning] Couldn't find file 'l_scapula.obj'.
+[2026-06-25 10:57:48.884] [warning] Couldn't find file 'l_humerus.obj'.
+[2026-06-25 10:57:48.884] [warning] Couldn't find file 'l_ulna.obj'.
+[2026-06-25 10:57:48.884] [warning] Couldn't find file 'r_radius.obj'.
+[2026-06-25 10:57:48.884] [warning] Couldn't find file 'l_hand.obj'.
+[2026-06-25 11:02:53.788] [info] Updating Model file from 40500 to latest format...
+[2026-06-25 11:02:53.790] [info] Loaded model bsm_body from file ./bsm/bsm_body.osim
+[2026-06-25 11:02:53.865] [info] Loaded model das3_v40600_r from file ./das3/das3_v40600_r.osim
+[2026-06-25 11:02:53.904] [info] Loaded model das3_v40600_l from file ./das3/das3_v40600_l.osim
+[2026-06-25 11:02:53.939] [warning] Couldn't find file 'r_clavicle.obj'.
+[2026-06-25 11:02:53.939] [warning] Couldn't find file 'r_scapula.obj'.
+[2026-06-25 11:02:53.939] [warning] Couldn't find file 'r_humerus.obj'.
+[2026-06-25 11:02:53.939] [warning] Couldn't find file 'r_ulna.obj'.
+[2026-06-25 11:02:53.939] [warning] Couldn't find file 'r_radius.obj'.
+[2026-06-25 11:02:53.939] [warning] Couldn't find file 'r_hand.obj'.
+[2026-06-25 11:02:53.939] [warning] Couldn't find file 'l_clavicle.obj'.
+[2026-06-25 11:02:53.939] [warning] Couldn't find file 'l_scapula.obj'.
+[2026-06-25 11:02:53.939] [warning] Couldn't find file 'l_humerus.obj'.
+[2026-06-25 11:02:53.939] [warning] Couldn't find file 'l_ulna.obj'.
+[2026-06-25 11:02:53.939] [warning] Couldn't find file 'r_radius.obj'.
+[2026-06-25 11:02:53.939] [warning] Couldn't find file 'l_hand.obj'.
+[2026-06-25 11:04:08.223] [info] Updating Model file from 40500 to latest format...
+[2026-06-25 11:04:08.226] [info] Loaded model bsm_body from file ./bsm/bsm_body.osim
+[2026-06-25 11:04:08.300] [info] Loaded model das3_v40600_r from file ./das3/das3_v40600_r.osim
+[2026-06-25 11:04:08.339] [info] Loaded model das3_v40600_l from file ./das3/das3_v40600_l.osim
+[2026-06-25 11:04:08.375] [warning] Couldn't find file 'r_clavicle.obj'.
+[2026-06-25 11:04:08.375] [warning] Couldn't find file 'r_scapula.obj'.
+[2026-06-25 11:04:08.375] [warning] Couldn't find file 'r_humerus.obj'.
+[2026-06-25 11:04:08.375] [warning] Couldn't find file 'r_ulna.obj'.
+[2026-06-25 11:04:08.375] [warning] Couldn't find file 'r_radius.obj'.
+[2026-06-25 11:04:08.375] [warning] Couldn't find file 'r_hand.obj'.
+[2026-06-25 11:04:08.375] [warning] Couldn't find file 'l_clavicle.obj'.
+[2026-06-25 11:04:08.375] [warning] Couldn't find file 'l_scapula.obj'.
+[2026-06-25 11:04:08.375] [warning] Couldn't find file 'l_humerus.obj'.
+[2026-06-25 11:04:08.375] [warning] Couldn't find file 'l_ulna.obj'.
+[2026-06-25 11:04:08.375] [warning] Couldn't find file 'r_radius.obj'.
+[2026-06-25 11:04:08.375] [warning] Couldn't find file 'l_hand.obj'.
+[2026-06-25 11:04:45.743] [info] Updating Model file from 40500 to latest format...
+[2026-06-25 11:04:45.745] [info] Loaded model bsm_body from file ./bsm/bsm_body.osim
+[2026-06-25 11:04:45.821] [info] Loaded model das3_v40600_r from file ./das3/das3_v40600_r.osim
+[2026-06-25 11:04:45.870] [info] Loaded model das3_v40600_l from file ./das3/das3_v40600_l.osim
+[2026-06-25 11:04:45.906] [warning] Couldn't find file 'r_clavicle.obj'.
+[2026-06-25 11:04:45.906] [warning] Couldn't find file 'r_scapula.obj'.
+[2026-06-25 11:04:45.906] [warning] Couldn't find file 'r_humerus.obj'.
+[2026-06-25 11:04:45.906] [warning] Couldn't find file 'r_ulna.obj'.
+[2026-06-25 11:04:45.906] [warning] Couldn't find file 'r_radius.obj'.
+[2026-06-25 11:04:45.906] [warning] Couldn't find file 'r_hand.obj'.
+[2026-06-25 11:04:45.906] [warning] Couldn't find file 'l_clavicle.obj'.
+[2026-06-25 11:04:45.906] [warning] Couldn't find file 'l_scapula.obj'.
+[2026-06-25 11:04:45.906] [warning] Couldn't find file 'l_humerus.obj'.
+[2026-06-25 11:04:45.906] [warning] Couldn't find file 'l_ulna.obj'.
+[2026-06-25 11:04:45.906] [warning] Couldn't find file 'r_radius.obj'.
+[2026-06-25 11:04:45.906] [warning] Couldn't find file 'l_hand.obj'.

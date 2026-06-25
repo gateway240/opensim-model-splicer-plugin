@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <OpenSimDocument Version="40500">
-	<Model name="BSM_body_only">
+	<Model name="bsm_body">
 		<!--The model's ground reference frame.-->
 		<Ground name="ground">
 			<!--The geometry used to display the axes of this Frame.-->
@@ -498,9 +498,7 @@
 					<!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
 					<inertia>0.015686700000000001 0.0145504 0.018588199999999999 0 0 0</inertia>
 				</Body>
-				
-
-	<Body name="thorax">
+				<Body name="thorax">
 					<!--List of components that this component owns and serializes.-->
 					<components>
 						<PhysicalOffsetFrame name="thorax_mesh_frame">
@@ -623,7 +621,7 @@
 					<!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
 					<inertia>1 1 1 0 0 0</inertia>
 				</Body>
-                <Body name="femur_r">
+				<Body name="femur_r">
 					<!--The geometry used to display the axes of this Frame.-->
 					<FrameGeometry name="frame_geometry">
 						<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2013,7 +2011,7 @@
 		<!--List of joints that connect the bodies.-->
 		<JointSet name="jointset">
 			<objects>
-            <CustomJoint name="ground_pelvis">
+				<CustomJoint name="ground_pelvis">
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The parent frame for the joint.).-->
 					<socket_parent_frame>ground_offset</socket_parent_frame>
 					<!--Path to a Component that satisfies the Socket 'child_frame' of type PhysicalFrame (description: The child frame for the joint.).-->
@@ -2331,7 +2329,7 @@
 					<!--Length of line segment.-->
 					<length>0.10000000000000001</length>
 				</ConstantCurvatureJoint>
-                
+
 
 				<ConstantCurvatureJoint name="thoracic_spine">
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The parent frame for the joint.).-->
@@ -2425,7 +2423,7 @@
 								</Appearance>
 							</FrameGeometry>
 							<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
-                            <socket_parent>/bodyset/thorax</socket_parent>
+							<socket_parent>/bodyset/thorax</socket_parent>
 							<!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
 							<translation>0 0 0</translation>
 							<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
